@@ -37,16 +37,16 @@ input {
 .box {
 	border: 2px solid;
 	border-radius: 8px;
-	transition: border-radius .5s;
-	-webkit-transition: border-radius .5s;
+	transition: border-radius .5s, background .1s, border-color .1s;
+	-webkit-transition: border-radius .5s, background .1s, border-color .1s;
 	box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
 	position: relative;
 }
 .circle {
 	border: 2px solid;
 	border-radius: 50%;
-	transition: border-radius .5s;
-	-webkit-transition: border-radius .5s;
+	transition: border-radius .5s, background .1s, border-color .1s;
+	-webkit-transition: border-radius .5s, background .1s, border-color .1s;
 	box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
 	position: relative;
 }
