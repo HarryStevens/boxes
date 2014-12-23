@@ -350,6 +350,8 @@ $(document).ready(function() {
 			$('.img-title input').attr('placeholder', 'da circles');
 			$('.download').attr('download', 'da circles.png');
 		}
+		$('.img-title input').focus();
+		focus = true;
 		html2canvas($('#canvas'), {
 			logging : true,
 			useCORS : true,
