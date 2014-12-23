@@ -290,7 +290,7 @@ $(document).ready(function() {
 		$('.box,.circle').contextMenu(colorMenu);
 	});
 
-	//you can center da boxes.
+	//u can center da boxes.
 	$('.move').mousedown(function() {
 		$(window).mousemove(function() {
 			$('.center').removeClass('inactive');
