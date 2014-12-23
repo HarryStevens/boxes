@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	//u can move da boxes.
 	$('.move').draggable({
+		containment : 'parent',
 		//u can center da boxes.
 		drag : function() {
 			$('.center').removeClass('inactive').addClass('active');
