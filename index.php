@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="icon" type="image/ico" href="favicon.ico" />
+		<link rel="icon" type="image/ico" href="icons/favicon.ico" />
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/jquery.contextmenu.css" />
@@ -20,16 +20,16 @@
 	<body>
 		<div class="content">
 			<div class="controls">
-				<div class="button colors">
+				<div class="button active colors">
 					colors.
 				</div>
-				<div class="button circles">
+				<div class="button active circles">
 					circles.
 				</div>
 				<div class="button inactive center">
 					center.
 				</div>
-				<div class="button save" data-toggle="modal" data-target="#save">
+				<div class="button active save" data-toggle="modal" data-target="#save">
 					save.
 				</div>
 			</div><!-- End .controls -->
@@ -67,12 +67,12 @@
 
 						<div class="modal-header">
 							<label class="img-title">title:
-								<input placeholder="da boxes">
+								<input>
 								</input> </label>
-							<div class="button close-modal">
+							<div class="button active close-modal">
 								cancel.
 							</div>
-							<a download="da boxes.png" class="button download">download.</a>
+							<a download="da boxes.png" class="button active download">download.</a>
 						</div>
 						<div class="modal-body">
 							...

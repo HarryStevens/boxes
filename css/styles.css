@@ -1,6 +1,6 @@
 body {
 	background-image: url('http://static.tumblr.com/hc6q6s4/qS6m2cjn7/stripe_17e52656a5e6249194369416c3357e76.png');
-	color: black;
+	color: #000;
 	font-family: Helvetica;
 	font-size: 16px;
 }
@@ -12,11 +12,13 @@ label {
 }
 input {
 	font-weight: normal;
-	border: 2px solid black;
+	border: 2px solid #000;
 	border-radius: 8px;
 	padding: 2px 8px;
 	outline-width: 0;
 }
+
+/*WRAPPERS*/
 .content {
 	margin: 10px auto;
 	display: table;
@@ -30,6 +32,8 @@ input {
 	font-size: 26px;
 	text-align: right;
 }
+
+/*BOXES*/
 .top {
 	width: 600px;
 	height: 600px;
@@ -99,15 +103,16 @@ input {
 	background: #FF0000;
 	border-color: #800000;
 }
+
+/*COLOR MENU*/
 .context-menu {
 	padding: 2px;
 	background: #fff;
-	border: 2px solid black;
+	border: 2px solid #000;
 	border-radius: 8px;
 	font-family: Helvetica;
 	font-size: 14px;
 }
-
 .color-menu-item {
 	background: #fff;
 	border-radius: 8px;
@@ -134,11 +139,12 @@ input {
 	font-family: Helvetica;
 	background: #eee;
 }
+
+/*BUTTONS*/
 .button {
 	margin-right: 10px;
 	background: #fff;
 	padding: 2px 4px;
-	border: 2px solid black;
 	border-radius: 8px;
 	cursor: pointer;
 	float: left;
@@ -148,10 +154,6 @@ input {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-}
-.button:hover {
-	background: #888;
-	color: white;
 }
 .inactive {
 	border: 2px solid #ddd;
@@ -163,18 +165,30 @@ input {
 	background: #fff !important;
 	cursor: default !important;
 }
+.active {
+	border: 2px solid #000;
+	color: #000;
+}
+.active:hover {
+	border: 2px solid #000;
+	color: #FFF !important;
+	background: #888 !important;
+	cursor: pointer !important;
+}
 a.button {
-	color: black;
+	color: #000;
 	text-decoration: none;
 }
 a:hover.button {
-	color: white;
+	color: #FFF;
 	text-decoration: none;
 }
 .circles {
 	width: 62px;
 	text-align: center;
 }
+
+/*MODAL*/
 .modal-header {
 	height: 60px;
 }

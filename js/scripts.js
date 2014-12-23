@@ -3,6 +3,40 @@ $(document).ready(function() {
 	//u can move da boxes.
 	$('.move').draggable({
 		containment : 'parent',
+		//u can center da boxes.
+		drag : function() {
+			$('.center').removeClass('inactive');
+			$('.center').addClass('active');
+		},
+		stop : function() {
+			$('.center').mousedown(function() {
+				$(this).addClass('inactive').removeClass('active');
+				$(window).mousemove(function() {
+					$('.center').addClass('inactive');
+				});
+
+				$('.two').css({
+					'left' : '96px',
+					'top' : '79px'
+				});
+				$('.three').css({
+					'left' : '65px',
+					'top' : '44px'
+				});
+				$('.four').css({
+					'left' : '42px',
+					'top' : '24px'
+				});
+				$('.five').css({
+					'left' : '28px',
+					'top' : '6px'
+				});
+				$('.six').css({
+					'left' : '17px',
+					'top' : '-5px'
+				});
+			});
+		},
 	});
 
 	//u can change da colors.
@@ -285,50 +319,15 @@ $(document).ready(function() {
 			hoverClassName : 'color-menu-item-violet'
 		}
 	}];
-	$.contextMenu.shadow=false;
+	$.contextMenu.shadow = false;
 	$(function() {
 		$('.box,.circle').contextMenu(colorMenu);
 	});
 
-	//u can center da boxes.
-	$('.move').mousedown(function() {
-		$(window).mousemove(function() {
-			$('.center').removeClass('inactive');
-		});
-	});
-
-	$('.center').mousedown(function() {
-		$(this).addClass('inactive');
-		$(window).mousemove(function() {
-			$('.center').addClass('inactive');
-		});
-
-		$('.two').css({
-			'left' : '96px',
-			'top' : '79px'
-		});
-		$('.three').css({
-			'left' : '65px',
-			'top' : '44px'
-		});
-		$('.four').css({
-			'left' : '42px',
-			'top' : '24px'
-		});
-		$('.five').css({
-			'left' : '28px',
-			'top' : '6px'
-		});
-		$('.six').css({
-			'left' : '17px',
-			'top' : '-5px'
-		});
-	});
-	
 	//u can make da circles.
-	$('.circles').mousedown(function(){
-		console.log('clicko!');
-		if ($('.box').hasClass('box')){
+
+	$('.circles').mousedown(function() {
+		if ($('.box').hasClass('box')) {
 			$('.box').addClass('circle');
 			$('.box').removeClass('box');
 			$('.circles').html('boxes.');
@@ -339,12 +338,18 @@ $(document).ready(function() {
 			$('.circle').removeClass('circle');
 			$('.circles').html('circles.');
 			$('.title').html('u can move da boxes.');
-			$('.end').html('˙sǝxoq ɐp ǝʌoɯ uɐɔ n');			
+			$('.end').html('˙sǝxoq ɐp ǝʌoɯ uɐɔ n');
 		}
 	});
-
 	//u can save da boxes.
 	$('.save').mousedown(function() {
+		if ($('.box').hasClass('box')) {
+			$('.img-title input').attr('placeholder', 'da boxes');
+			$('.download').attr('download', 'da boxes.png');
+		} else if ($('.circle').hasClass('circle')) {
+			$('.img-title input').attr('placeholder', 'da circles');
+			$('.download').attr('download', 'da circles.png');
+		}
 		html2canvas($('#canvas'), {
 			logging : true,
 			useCORS : true,
@@ -356,13 +361,13 @@ $(document).ready(function() {
 			},
 			background : '#fff'
 		});
-
 		$('.img-title input').keyup(function() {
-			imgTitle = $('.img-title input').val();
+			var imgTitle = $('.img-title input').val();
+			console.log(imgTitle);
 			if (imgTitle == '') {
 				imgTitle = 'da boxes';
 			} else {
-				imgTitle = $('.img-title input').val();
+				imgTitle == $('.img-title input').val();
 			}
 
 			$('.download').attr('download', imgTitle + '.png');
