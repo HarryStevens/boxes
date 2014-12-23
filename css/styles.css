@@ -34,6 +34,27 @@ input {
 }
 
 /*BOXES*/
+.box {
+	border: 2px solid;
+	border-radius: 8px;
+	transition: border-radius .5s;
+	-webkit-transition: border-radius .5s;
+	box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
+	position: relative;
+}
+.circle {
+	border: 2px solid;
+	border-radius: 50%;
+	transition: border-radius .5s;
+	-webkit-transition: border-radius .5s;
+	box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
+	position: relative;
+}
+.move {
+	width: 66.666666667%;
+	height: 66.666666667%;
+	cursor: pointer;
+}
 .top {
 	width: 600px;
 	height: 600px;
@@ -55,29 +76,8 @@ input {
 	top: 6px;
 }
 .six {
-	left: 17px;
+	left: 18px;
 	top: -5px;
-}
-.box {
-	border: 2px solid;
-	border-radius: 8px;
-	transition: border-radius .5s;
-	-webkit-transition: border-radius .5s;
-	box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
-	position: relative;
-}
-.circle {
-	border: 2px solid;
-	border-radius: 50%;
-	transition: border-radius .5s;
-	-webkit-transition: border-radius .5s;
-	box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
-	position: relative;
-}
-.move {
-	width: 66.666666667%;
-	height: 66.666666667%;
-	cursor: pointer;
 }
 .violet {
 	background: #800080;
