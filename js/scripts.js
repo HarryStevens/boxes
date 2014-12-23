@@ -5,10 +5,11 @@ $(document).ready(function() {
 		containment : 'parent',
 		//u can center da boxes.
 		drag : function() {
-			$('.center').removeClass('inactive');
-			$('.center').addClass('active');
+			$('.center').removeClass('inactive').addClass('active');
+			$('.box,.circle').removeClass('slowmove');
 		},
 		stop : function() {
+			$('.box,.circle').addClass('slowmove');
 			$('.center').mousedown(function() {
 				$(this).addClass('inactive').removeClass('active');
 				$(window).mousemove(function() {
@@ -340,7 +341,7 @@ $(document).ready(function() {
 			$('.end').html('˙sǝxoq ɐp ǝʌoɯ uɐɔ n');
 		}
 	});
-	
+
 	//u can save da boxes.
 	$('.save').mousedown(function() {
 		if ($('.box').hasClass('box')) {
@@ -350,7 +351,7 @@ $(document).ready(function() {
 			$('.img-title input').attr('placeholder', 'da circles');
 			$('.download').attr('download', 'da circles.png');
 		}
-		
+
 		html2canvas($('#canvas'), {
 			logging : true,
 			useCORS : true,
@@ -362,7 +363,7 @@ $(document).ready(function() {
 			},
 			background : '#fff'
 		});
-		
+
 		$('.img-title input').keyup(function() {
 			var imgTitle = $('.img-title input').val();
 			console.log(imgTitle);

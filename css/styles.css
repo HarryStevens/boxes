@@ -55,6 +55,10 @@ input {
 	height: 66.666666667%;
 	cursor: pointer;
 }
+.slowmove {
+	transition: border-radius .5s, background .1s, border-color .1s, top 1s, left 1s;
+	-webkit-transition: border-radius .5s, background .1s, border-color .1s, top 1s, left 1s;
+}
 .top {
 	width: 600px;
 	height: 600px;
