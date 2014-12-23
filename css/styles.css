@@ -1,0 +1,200 @@
+body {
+	background-image: url('http://static.tumblr.com/hc6q6s4/qS6m2cjn7/stripe_17e52656a5e6249194369416c3357e76.png');
+	color: black;
+	font-family: Helvetica;
+	font-size: 16px;
+}
+label {
+	font-weight: normal;
+	margin-top: 2px;
+	position: relative;
+	top: -2px;
+}
+input {
+	font-weight: normal;
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 2px 8px;
+	outline-width: 0;
+}
+.content {
+	margin: 10px auto;
+	display: table;
+}
+.controls {
+	margin-left: 0px;
+	padding: 0px;
+	margin-bottom: 26px;
+}
+.title {
+	font-size: 26px;
+	text-align: right;
+}
+.top {
+	width: 600px;
+	height: 600px;
+}
+.two {
+	left: 96px;
+	top: 79px;
+}
+.three {
+	left: 65px;
+	top: 44px;
+}
+.four {
+	left: 42px;
+	top: 24px;
+}
+.five {
+	left: 28px;
+	top: 6px;
+}
+.six {
+	left: 17px;
+	top: -5px;
+}
+.box {
+	border: 2px solid;
+	border-radius: 8px;
+	transition: border-radius .5s;
+	-webkit-transition: border-radius .5s;
+	box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
+	position: relative;
+}
+.circle {
+	border: 2px solid;
+	border-radius: 50%;
+	transition: border-radius .5s;
+	-webkit-transition: border-radius .5s;
+	box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
+	position: relative;
+}
+.move {
+	width: 66.666666667%;
+	height: 66.666666667%;
+	cursor: pointer;
+}
+.violet {
+	background: #800080;
+	border-color: #400040;
+}
+.blue {
+	background: #0000FF;
+	border-color: #000080;
+}
+.green {
+	background: #008000;
+	border-color: #003300;
+}
+.yellow {
+	background: #CCCC00;
+	border-color: #4C4C00;
+}
+.orange {
+	background: #FFA500;
+	border-color: #FF4500;
+}
+.red {
+	background: #FF0000;
+	border-color: #800000;
+}
+.context-menu {
+	padding: 2px;
+	background: #fff;
+	border: 2px solid black;
+	border-radius: 8px;
+	font-family: Helvetica;
+	font-size: 14px;
+}
+
+.color-menu-item {
+	background: #fff;
+	border-radius: 8px;
+}
+.color-menu-item-red {
+	background: red;
+}
+.color-menu-item-orange {
+	background: orange;
+}
+.color-menu-item-yellow {
+	background: yellow;
+}
+.color-menu-item-green {
+	background: green;
+}
+.color-menu-item-blue {
+	background: blue;
+}
+.color-menu-item-violet {
+	background: purple;
+}
+.color-menu-item-hover {
+	font-family: Helvetica;
+	background: #eee;
+}
+.button {
+	margin-right: 10px;
+	background: #fff;
+	padding: 2px 4px;
+	border: 2px solid black;
+	border-radius: 8px;
+	cursor: pointer;
+	float: left;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.button:hover {
+	background: #888;
+	color: white;
+}
+.inactive {
+	border: 2px solid #ddd;
+	color: #ddd;
+}
+.inactive:hover {
+	border: 2px solid #ddd;
+	color: #ddd !important;
+	background: #fff !important;
+	cursor: default !important;
+}
+a.button {
+	color: black;
+	text-decoration: none;
+}
+a:hover.button {
+	color: white;
+	text-decoration: none;
+}
+.circles {
+	width: 62px;
+	text-align: center;
+}
+.modal-header {
+	height: 60px;
+}
+.modal-dialog {
+	width: 637px;
+}
+.modal-body {
+	margin: 0 auto;
+	display: table;
+	background-image: url('http://static.tumblr.com/hc6q6s4/qS6m2cjn7/stripe_17e52656a5e6249194369416c3357e76.png');
+}
+.modal-content {
+	height: 753px;
+}
+.img-title {
+	float: left;
+}
+.download {
+	float: right;
+}
+.close-modal {
+	float: right !important;
+}
