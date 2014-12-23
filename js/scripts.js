@@ -325,7 +325,6 @@ $(document).ready(function() {
 	});
 
 	//u can make da circles.
-
 	$('.circles').mousedown(function() {
 		if ($('.box').hasClass('box')) {
 			$('.box').addClass('circle');
@@ -341,6 +340,7 @@ $(document).ready(function() {
 			$('.end').html('˙sǝxoq ɐp ǝʌoɯ uɐɔ n');
 		}
 	});
+	
 	//u can save da boxes.
 	$('.save').mousedown(function() {
 		if ($('.box').hasClass('box')) {
@@ -350,8 +350,7 @@ $(document).ready(function() {
 			$('.img-title input').attr('placeholder', 'da circles');
 			$('.download').attr('download', 'da circles.png');
 		}
-		$('.img-title input').focus();
-		focus = true;
+		
 		html2canvas($('#canvas'), {
 			logging : true,
 			useCORS : true,
@@ -363,6 +362,7 @@ $(document).ready(function() {
 			},
 			background : '#fff'
 		});
+		
 		$('.img-title input').keyup(function() {
 			var imgTitle = $('.img-title input').val();
 			console.log(imgTitle);
