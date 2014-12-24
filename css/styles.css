@@ -62,6 +62,7 @@ input {
 .top {
 	width: 600px;
 	height: 600px;
+	box-shadow: none !important;
 }
 .two {
 	left: 96px;
@@ -85,27 +86,27 @@ input {
 }
 .violet {
 	background: #800080;
-	border-color: #400040;
+	border-color: #800080;
 }
 .blue {
 	background: #0000FF;
-	border-color: #000080;
+	border-color: #0000FF;
 }
 .green {
 	background: #008000;
-	border-color: #003300;
+	border-color: #008000;
 }
 .yellow {
 	background: #CCCC00;
-	border-color: #4C4C00;
+	border-color: #CCCC00;
 }
 .orange {
 	background: #FFA500;
-	border-color: #FF4500;
+	border-color: #FFA500;
 }
 .red {
 	background: #FF0000;
-	border-color: #800000;
+	border-color: #FF0000;
 }
 
 /*COLOR MENU*/
@@ -147,10 +148,8 @@ input {
 /*BUTTONS*/
 .button {
 	margin-right: 10px;
-	background: #fff;
 	padding: 2px 4px;
 	border-radius: 8px;
-	cursor: pointer;
 	float: left;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -160,31 +159,32 @@ input {
 	user-select: none;
 }
 .inactive {
-	border: 2px solid #ddd;
+	border: 2px solid #eee;
 	color: #ddd;
+	background: #eee;
 }
 .inactive:hover {
-	border: 2px solid #ddd;
-	color: #ddd !important;
-	background: #fff !important;
-	cursor: default !important;
+	border: 2px solid #eee;
+	color: #ddd;
+	background: #eee;
+	cursor: default;
 }
 .active {
-	border: 2px solid #000;
-	color: #000;
+	border: 2px solid #aaa;
+	color: #fff;
+	background: #aaa;
+	cursor: pointer;
 }
 .active:hover {
-	border: 2px solid #000;
-	color: #FFF !important;
-	background: #888 !important;
-	cursor: pointer !important;
+	border: 2px solid #888;
+	color: #fff;
+	background: #888;
+	cursor: pointer;
 }
 a.button {
-	color: #000;
 	text-decoration: none;
 }
 a:hover.button {
-	color: #FFF;
 	text-decoration: none;
 }
 .circles {
