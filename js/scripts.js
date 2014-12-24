@@ -386,4 +386,7 @@ $(document).ready(function() {
 		})
 	});
 
+	$('#save').on('shown.bs.modal', function() {
+		$('.img-title input').focus()
+	})
 });
