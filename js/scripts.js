@@ -366,7 +366,7 @@ $(document).ready(function() {
 
 		$('.img-title input').keyup(function() {
 			var imgTitle = $('.img-title input').val();
-			console.log(imgTitle);
+
 			if (imgTitle == '') {
 				imgTitle = 'da boxes';
 			} else {
@@ -380,13 +380,15 @@ $(document).ready(function() {
 			$('#save').modal('hide');
 			$('.img-title input').val('');
 		});
+
 		$('.download').click(function() {
 			$('#save').modal('hide');
 			$('.img-title input').val('');
-		})
+		});
+
 	});
 
 	$('#save').on('shown.bs.modal', function() {
-		$('.img-title input').focus()
+		$('.img-title input').focus();
 	})
 });
