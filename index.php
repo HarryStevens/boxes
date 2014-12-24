@@ -14,6 +14,7 @@
 		<script type="text/javascript" src="js/jquery.contextmenu.js"></script>
 		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
 		<script type="text/javascript" src="js/html2canvas.js"></script>
+		<script type="text/javascript" src="js/bounce.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
 		<title>Boxes</title>
 	</head>
@@ -61,7 +62,7 @@
 				</div>
 			</div><!-- End #canvas -->
 
-			<div class="modal fade" id="save" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal fade" id="save" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" data-keyboard="false">
 				<div class="modal-dialog">
 					<div class="modal-content">
 

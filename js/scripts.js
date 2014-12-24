@@ -357,7 +357,7 @@ $(document).ready(function() {
 			useCORS : true,
 			onrendered : function(canvas) {
 				img = canvas.toDataURL("image/jpg");
-				imgURL = '<img class="save-image" src="' + img + '">';
+				imgURL = '<img class="save-image" width="400px" src="' + img + '">';
 				$('.modal-body').html(imgURL);
 				$('.download').attr('href', img);
 			},

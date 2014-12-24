@@ -12,7 +12,9 @@ label {
 }
 input {
 	font-weight: normal;
-	border: 2px solid #000;
+	border: none;
+	height: 31px;
+	width: 150px;
 	border-radius: 8px;
 	padding: 2px 8px;
 	outline-width: 0;
@@ -200,9 +202,10 @@ a:hover.button {
 	background: #242424;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
+	padding-top: 14px;
 }
 .modal-dialog {
-	width: 637px;
+	width: 435px;
 }
 .modal-body {
 	margin: 0 auto;
@@ -210,7 +213,7 @@ a:hover.button {
 	background-image: url('http://static.tumblr.com/hc6q6s4/qS6m2cjn7/stripe_17e52656a5e6249194369416c3357e76.png');
 }
 .modal-content {
-	height: 753px;
+	height: 536px;
 	border-radius: 10px;
 }
 .img-title {
@@ -223,3 +226,4 @@ a:hover.button {
 	float: right !important;
 	margin-right: 0px;
 }
+
