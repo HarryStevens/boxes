@@ -148,6 +148,7 @@ function circles() {
 	$('.circles').html('boxes.');
 	$('.title').html('u can move da circles.');
 	$('.end').html('˙sǝןɔɹıɔ ɐp ǝʌoɯ uɐɔ n');
+	$('.reset').addClass('active').removeClass('inactive');
 }
 
 //u can make da boxes.
@@ -208,11 +209,23 @@ $(document).ready(function() {
 		drag : function() {
 			$('.center').addClass('active').removeClass('inactive');
 			$('.box,.circle').removeClass('slowmove');
+			$('.reset').addClass('active').removeClass('inactive');
 		},
 		stop : function() {
 			$('.box,.circle').addClass('slowmove');
 			$('.center').mousedown(function() {
 				$(this).addClass('inactive').removeClass('active');
+				if (
+					($('.box').hasClass('box'))&&
+					($('.top').hasClass('violet'))&&
+					($('.two').hasClass('blue'))&&
+					($('.three').hasClass('green'))&&
+					($('.four').hasClass('yellow'))&&
+					($('.five').hasClass('orange'))&&
+					($('.six').hasClass('red'))
+				){
+					$('.reset').addClass('inactive').removeClass('active');
+				}
 				center();
 			});
 		},
@@ -221,6 +234,7 @@ $(document).ready(function() {
 	//u can change da colors.
 	$('.colors').mousedown(function() {
 		colors();
+		$('.reset').addClass('active').removeClass('inactive');
 	});
 
 	var colorMenu = [{
@@ -245,6 +259,7 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('red');
+				$('.reset').addClass('active').removeClass('inactive');	
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-red'
@@ -271,6 +286,7 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('orange');
+				$('.reset').addClass('active').removeClass('inactive');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-orange'
@@ -297,6 +313,7 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('yellow');
+				$('.reset').addClass('active').removeClass('inactive');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-yellow'
@@ -323,6 +340,7 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('green');
+				$('.reset').addClass('active').removeClass('inactive');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-green'
@@ -349,6 +367,7 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('blue');
+				$('.reset').addClass('active').removeClass('inactive');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-blue'
@@ -375,6 +394,7 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('violet');
+				$('.reset').addClass('active').removeClass('inactive');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-violet'
@@ -395,7 +415,7 @@ $(document).ready(function() {
 		resetColors();
 		boxes();
 		center();
-		$('.center').removeClass('active').addClass('inactive');
+		$('.center,.reset').removeClass('active').addClass('inactive');
 	});
 
 	//u can save da boxes.
