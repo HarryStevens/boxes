@@ -29,7 +29,7 @@
 				<div class="button inactive center">
 					center.
 				</div>
-				<div class="button inactive reset">
+				<div class="button active reset">
 					reset.
 				</div>				
 				<div class="button active save" data-toggle="modal" data-target="#save">

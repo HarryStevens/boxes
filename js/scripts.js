@@ -206,14 +206,13 @@ $(document).ready(function() {
 		containment : 'parent',
 		//u can center da boxes.
 		drag : function() {
-			$('.center,.reset').removeClass('inactive').addClass('active');
+			$('.center').addClass('active').removeClass('inactive');
 			$('.box,.circle').removeClass('slowmove');
 		},
 		stop : function() {
 			$('.box,.circle').addClass('slowmove');
 			$('.center').mousedown(function() {
 				$(this).addClass('inactive').removeClass('active');
-				$('.reset').addClass('inactive').removeClass('active');
 				center();
 			});
 		},
@@ -221,7 +220,6 @@ $(document).ready(function() {
 
 	//u can change da colors.
 	$('.colors').mousedown(function() {
-		$('.reset').removeClass('inactive').addClass('active');
 		colors();
 	});
 
@@ -247,7 +245,6 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('red');
-				$('.reset').removeClass('inactive').addClass('active');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-red'
@@ -274,7 +271,6 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('orange');
-				$('.reset').removeClass('inactive').addClass('active');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-orange'
@@ -301,7 +297,6 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('yellow');
-				$('.reset').removeClass('inactive').addClass('active');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-yellow'
@@ -328,7 +323,6 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('green');
-				$('.reset').removeClass('inactive').addClass('active');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-green'
@@ -355,7 +349,6 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('blue');
-				$('.reset').removeClass('inactive').addClass('active');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-blue'
@@ -382,7 +375,6 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('violet');
-				$('.reset').removeClass('inactive').addClass('active');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-violet'
@@ -397,14 +389,13 @@ $(document).ready(function() {
 	$('.circles').mousedown(function() {
 		shapes();
 	});
-	
+
 	//u can reset da boxes.
-	$('.reset').mousedown(function(){
+	$('.reset').mousedown(function() {
 		resetColors();
 		boxes();
 		center();
 		$('.center').removeClass('active').addClass('inactive');
-		$(this).removeClass('active').addClass('inactive');
 	});
 
 	//u can save da boxes.
