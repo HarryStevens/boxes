@@ -185,15 +185,15 @@ function center() {
 		'top' : '44px'
 	});
 	$('.four').css({
-		'left' : '42px',
-		'top' : '24px'
+		'left' : '43px',
+		'top' : '22px'
 	});
 	$('.five').css({
 		'left' : '27px',
 		'top' : '6px'
 	});
 	$('.six').css({
-		'left' : '17px',
+		'left' : '19px',
 		'top' : '-5px'
 	});
 }
