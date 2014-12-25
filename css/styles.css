@@ -22,7 +22,6 @@ body {
 
 /*BOXES*/
 .box {
-	border: 2px solid;
 	border-radius: 0px;
 	transition: border-radius .5s, background .1s, border-color .1s;
 	-webkit-transition: border-radius .5s, background .1s, border-color .1s;
@@ -30,7 +29,6 @@ body {
 	position: relative;
 }
 .circle {
-	border: 2px solid;
 	transition: border-radius .5s, background .1s, border-color .1s;
 	-webkit-transition: border-radius .5s, background .1s, border-color .1s;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -90,27 +88,21 @@ body {
 }
 .violet {
 	background: #800080;
-	border-color: #800080;
 }
 .blue {
 	background: #0000FF;
-	border-color: #0000FF;
 }
 .green {
 	background: #008000;
-	border-color: #008000;
 }
 .yellow {
 	background: #CCCC00;
-	border-color: #CCCC00;
 }
 .orange {
 	background: #FFA500;
-	border-color: #FFA500;
 }
 .red {
 	background: #FF0000;
-	border-color: #FF0000;
 }
 
 /*COLOR MENU*/
