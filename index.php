@@ -14,7 +14,6 @@
 		<script type="text/javascript" src="js/jquery.contextmenu.js"></script>
 		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
 		<script type="text/javascript" src="js/html2canvas.js"></script>
-		<script type="text/javascript" src="js/bounce.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
 		<title>Boxes</title>
 	</head>
@@ -30,6 +29,9 @@
 				<div class="button inactive center">
 					center.
 				</div>
+				<div class="button inactive reset">
+					reset.
+				</div>				
 				<div class="button active save" data-toggle="modal" data-target="#save">
 					save.
 				</div>

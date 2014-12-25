@@ -1,3 +1,204 @@
+//u can change da colors.
+function colors() {
+	if ($('.top').hasClass('violet')) {
+		$('.top').addClass('blue');
+		$('.top').removeClass('violet');
+	} else if ($('.top').hasClass('blue')) {
+		$('.top').addClass('green');
+		$('.top').removeClass('blue');
+	} else if ($('.top').hasClass('green')) {
+		$('.top').addClass('yellow');
+		$('.top').removeClass('green');
+	} else if ($('.top').hasClass('yellow')) {
+		$('.top').addClass('orange');
+		$('.top').removeClass('yellow');
+	} else if ($('.top').hasClass('orange')) {
+		$('.top').addClass('red');
+		$('.top').removeClass('orange');
+	} else {
+		$('.top').addClass('violet');
+		$('.top').removeClass('red');
+	}
+
+	if ($('.two').hasClass('violet')) {
+		$('.two').addClass('blue');
+		$('.two').removeClass('violet');
+	} else if ($('.two').hasClass('blue')) {
+		$('.two').addClass('green');
+		$('.two').removeClass('blue');
+	} else if ($('.two').hasClass('green')) {
+		$('.two').addClass('yellow');
+		$('.two').removeClass('green');
+	} else if ($('.two').hasClass('yellow')) {
+		$('.two').addClass('orange');
+		$('.two').removeClass('yellow');
+	} else if ($('.two').hasClass('orange')) {
+		$('.two').addClass('red');
+		$('.two').removeClass('orange');
+	} else {
+		$('.two').addClass('violet');
+		$('.two').removeClass('red');
+	}
+
+	if ($('.three').hasClass('violet')) {
+		$('.three').addClass('blue');
+		$('.three').removeClass('violet');
+	} else if ($('.three').hasClass('blue')) {
+		$('.three').addClass('green');
+		$('.three').removeClass('blue');
+	} else if ($('.three').hasClass('green')) {
+		$('.three').addClass('yellow');
+		$('.three').removeClass('green');
+	} else if ($('.three').hasClass('yellow')) {
+		$('.three').addClass('orange');
+		$('.three').removeClass('yellow');
+	} else if ($('.three').hasClass('orange')) {
+		$('.three').addClass('red');
+		$('.three').removeClass('orange');
+	} else {
+		$('.three').addClass('violet');
+		$('.three').removeClass('red');
+	}
+
+	if ($('.four').hasClass('violet')) {
+		$('.four').addClass('blue');
+		$('.four').removeClass('violet');
+	} else if ($('.four').hasClass('blue')) {
+		$('.four').addClass('green');
+		$('.four').removeClass('blue');
+	} else if ($('.four').hasClass('green')) {
+		$('.four').addClass('yellow');
+		$('.four').removeClass('green');
+	} else if ($('.four').hasClass('yellow')) {
+		$('.four').addClass('orange');
+		$('.four').removeClass('yellow');
+	} else if ($('.four').hasClass('orange')) {
+		$('.four').addClass('red');
+		$('.four').removeClass('orange');
+	} else {
+		$('.four').addClass('violet');
+		$('.four').removeClass('red');
+	}
+
+	if ($('.five').hasClass('violet')) {
+		$('.five').addClass('blue');
+		$('.five').removeClass('violet');
+	} else if ($('.five').hasClass('blue')) {
+		$('.five').addClass('green');
+		$('.five').removeClass('blue');
+	} else if ($('.five').hasClass('green')) {
+		$('.five').addClass('yellow');
+		$('.five').removeClass('green');
+	} else if ($('.five').hasClass('yellow')) {
+		$('.five').addClass('orange');
+		$('.five').removeClass('yellow');
+	} else if ($('.five').hasClass('orange')) {
+		$('.five').addClass('red');
+		$('.five').removeClass('orange');
+	} else {
+		$('.five').addClass('violet');
+		$('.five').removeClass('red');
+	}
+
+	if ($('.six').hasClass('violet')) {
+		$('.six').addClass('blue');
+		$('.six').removeClass('violet');
+	} else if ($('.six').hasClass('blue')) {
+		$('.six').addClass('green');
+		$('.six').removeClass('blue');
+	} else if ($('.six').hasClass('green')) {
+		$('.six').addClass('yellow');
+		$('.six').removeClass('green');
+	} else if ($('.six').hasClass('yellow')) {
+		$('.six').addClass('orange');
+		$('.six').removeClass('yellow');
+	} else if ($('.six').hasClass('orange')) {
+		$('.six').addClass('red');
+		$('.six').removeClass('orange');
+	} else {
+		$('.six').addClass('violet');
+		$('.six').removeClass('red');
+	}
+}
+
+//u can reset da colors.
+function resetColors() {
+	$('.top').removeClass('red orange yellow green blue').addClass('violet');
+	$('.two').removeClass('red orange yellow green violet').addClass('blue');
+	$('.three').removeClass('red orange yellow blue violet').addClass('green');
+	$('.four').removeClass('red orange green blue violet').addClass('yellow');
+	$('.five').removeClass('red yellow green blue violet').addClass('orange');
+	$('.six').removeClass('orange yellow green blue violet').addClass('red');
+}
+
+//u can change da shapes.
+//u can make da circles.
+function circles() {
+	$('.box').addClass('circle');
+	//can't do border-radius: 50% because html2canvas
+	//won't render it in web-kit browsers. need a different
+	//circle class for each box.
+	$('.top').addClass('circle-top');
+	$('.two').addClass('circle-two');
+	$('.three').addClass('circle-three');
+	$('.four').addClass('circle-four');
+	$('.five').addClass('circle-five');
+	$('.six').addClass('circle-six');
+	$('.box').removeClass('box');
+	$('.circles').html('boxes.');
+	$('.title').html('u can move da circles.');
+	$('.end').html('˙sǝןɔɹıɔ ɐp ǝʌoɯ uɐɔ n');
+}
+
+//u can make da boxes.
+function boxes() {
+	$('.circle').addClass('box');
+	$('.top').removeClass('circle-top');
+	$('.two').removeClass('circle-two');
+	$('.three').removeClass('circle-three');
+	$('.four').removeClass('circle-four');
+	$('.five').removeClass('circle-five');
+	$('.six').removeClass('circle-six');
+	$('.circle').removeClass('circle');
+	$('.circles').html('circles.');
+	$('.title').html('u can move da boxes.');
+	$('.end').html('˙sǝxoq ɐp ǝʌoɯ uɐɔ n');
+}
+
+//conditional function to be used when boxes./circles. button clicked
+function shapes() {
+	if ($('.box').hasClass('box')) {
+		circles();
+	} else if ($('.circle').hasClass('circle')) {
+		boxes();
+	}
+}
+
+//u can center da boxes.
+function center() {
+	$('.two').css({
+		'left' : '96px',
+		'top' : '79px'
+	});
+	$('.three').css({
+		'left' : '65px',
+		'top' : '44px'
+	});
+	$('.four').css({
+		'left' : '42px',
+		'top' : '24px'
+	});
+	$('.five').css({
+		'left' : '27px',
+		'top' : '6px'
+	});
+	$('.six').css({
+		'left' : '17px',
+		'top' : '-5px'
+	});
+}
+
+
 $(document).ready(function() {
 
 	//u can move da boxes.
@@ -5,162 +206,23 @@ $(document).ready(function() {
 		containment : 'parent',
 		//u can center da boxes.
 		drag : function() {
-			$('.center').removeClass('inactive').addClass('active');
+			$('.center,.reset').removeClass('inactive').addClass('active');
 			$('.box,.circle').removeClass('slowmove');
 		},
 		stop : function() {
 			$('.box,.circle').addClass('slowmove');
 			$('.center').mousedown(function() {
 				$(this).addClass('inactive').removeClass('active');
-				$(window).mousemove(function() {
-					$('.center').addClass('inactive');
-				});
-
-				$('.two').css({
-					'left' : '96px',
-					'top' : '79px'
-				});
-				$('.three').css({
-					'left' : '65px',
-					'top' : '44px'
-				});
-				$('.four').css({
-					'left' : '42px',
-					'top' : '24px'
-				});
-				$('.five').css({
-					'left' : '27px',
-					'top' : '6px'
-				});
-				$('.six').css({
-					'left' : '17px',
-					'top' : '-5px'
-				});
+				$('.reset').addClass('inactive').removeClass('active');
+				center();
 			});
 		},
 	});
 
 	//u can change da colors.
 	$('.colors').mousedown(function() {
-		if ($('.top').hasClass('violet')) {
-			$('.top').addClass('blue');
-			$('.top').removeClass('violet');
-		} else if ($('.top').hasClass('blue')) {
-			$('.top').addClass('green');
-			$('.top').removeClass('blue');
-		} else if ($('.top').hasClass('green')) {
-			$('.top').addClass('yellow');
-			$('.top').removeClass('green');
-		} else if ($('.top').hasClass('yellow')) {
-			$('.top').addClass('orange');
-			$('.top').removeClass('yellow');
-		} else if ($('.top').hasClass('orange')) {
-			$('.top').addClass('red');
-			$('.top').removeClass('orange');
-		} else {
-			$('.top').addClass('violet');
-			$('.top').removeClass('red');
-		}
-
-		if ($('.two').hasClass('violet')) {
-			$('.two').addClass('blue');
-			$('.two').removeClass('violet');
-		} else if ($('.two').hasClass('blue')) {
-			$('.two').addClass('green');
-			$('.two').removeClass('blue');
-		} else if ($('.two').hasClass('green')) {
-			$('.two').addClass('yellow');
-			$('.two').removeClass('green');
-		} else if ($('.two').hasClass('yellow')) {
-			$('.two').addClass('orange');
-			$('.two').removeClass('yellow');
-		} else if ($('.two').hasClass('orange')) {
-			$('.two').addClass('red');
-			$('.two').removeClass('orange');
-		} else {
-			$('.two').addClass('violet');
-			$('.two').removeClass('red');
-		}
-
-		if ($('.three').hasClass('violet')) {
-			$('.three').addClass('blue');
-			$('.three').removeClass('violet');
-		} else if ($('.three').hasClass('blue')) {
-			$('.three').addClass('green');
-			$('.three').removeClass('blue');
-		} else if ($('.three').hasClass('green')) {
-			$('.three').addClass('yellow');
-			$('.three').removeClass('green');
-		} else if ($('.three').hasClass('yellow')) {
-			$('.three').addClass('orange');
-			$('.three').removeClass('yellow');
-		} else if ($('.three').hasClass('orange')) {
-			$('.three').addClass('red');
-			$('.three').removeClass('orange');
-		} else {
-			$('.three').addClass('violet');
-			$('.three').removeClass('red');
-		}
-
-		if ($('.four').hasClass('violet')) {
-			$('.four').addClass('blue');
-			$('.four').removeClass('violet');
-		} else if ($('.four').hasClass('blue')) {
-			$('.four').addClass('green');
-			$('.four').removeClass('blue');
-		} else if ($('.four').hasClass('green')) {
-			$('.four').addClass('yellow');
-			$('.four').removeClass('green');
-		} else if ($('.four').hasClass('yellow')) {
-			$('.four').addClass('orange');
-			$('.four').removeClass('yellow');
-		} else if ($('.four').hasClass('orange')) {
-			$('.four').addClass('red');
-			$('.four').removeClass('orange');
-		} else {
-			$('.four').addClass('violet');
-			$('.four').removeClass('red');
-		}
-
-		if ($('.five').hasClass('violet')) {
-			$('.five').addClass('blue');
-			$('.five').removeClass('violet');
-		} else if ($('.five').hasClass('blue')) {
-			$('.five').addClass('green');
-			$('.five').removeClass('blue');
-		} else if ($('.five').hasClass('green')) {
-			$('.five').addClass('yellow');
-			$('.five').removeClass('green');
-		} else if ($('.five').hasClass('yellow')) {
-			$('.five').addClass('orange');
-			$('.five').removeClass('yellow');
-		} else if ($('.five').hasClass('orange')) {
-			$('.five').addClass('red');
-			$('.five').removeClass('orange');
-		} else {
-			$('.five').addClass('violet');
-			$('.five').removeClass('red');
-		}
-
-		if ($('.six').hasClass('violet')) {
-			$('.six').addClass('blue');
-			$('.six').removeClass('violet');
-		} else if ($('.six').hasClass('blue')) {
-			$('.six').addClass('green');
-			$('.six').removeClass('blue');
-		} else if ($('.six').hasClass('green')) {
-			$('.six').addClass('yellow');
-			$('.six').removeClass('green');
-		} else if ($('.six').hasClass('yellow')) {
-			$('.six').addClass('orange');
-			$('.six').removeClass('yellow');
-		} else if ($('.six').hasClass('orange')) {
-			$('.six').addClass('red');
-			$('.six').removeClass('orange');
-		} else {
-			$('.six').addClass('violet');
-			$('.six').removeClass('red');
-		}
+		$('.reset').removeClass('inactive').addClass('active');
+		colors();
 	});
 
 	var colorMenu = [{
@@ -185,6 +247,7 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('red');
+				$('.reset').removeClass('inactive').addClass('active');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-red'
@@ -211,6 +274,7 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('orange');
+				$('.reset').removeClass('inactive').addClass('active');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-orange'
@@ -237,6 +301,7 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('yellow');
+				$('.reset').removeClass('inactive').addClass('active');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-yellow'
@@ -263,6 +328,7 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('green');
+				$('.reset').removeClass('inactive').addClass('active');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-green'
@@ -289,6 +355,7 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('blue');
+				$('.reset').removeClass('inactive').addClass('active');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-blue'
@@ -315,6 +382,7 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('violet');
+				$('.reset').removeClass('inactive').addClass('active');
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-violet'
@@ -327,34 +395,16 @@ $(document).ready(function() {
 
 	//u can make da circles.
 	$('.circles').mousedown(function() {
-		if ($('.box').hasClass('box')) {
-			$('.box').addClass('circle');
-			//can't do border-radius: 50% because html2canvas
-			//won't render it in web-kit browsers. need a different
-			//circle class for each box.
-			$('.top').addClass('circle-top');
-			$('.two').addClass('circle-two');
-			$('.three').addClass('circle-three');
-			$('.four').addClass('circle-four');
-			$('.five').addClass('circle-five');
-			$('.six').addClass('circle-six');
-			$('.box').removeClass('box');
-			$('.circles').html('boxes.');
-			$('.title').html('u can move da circles.');
-			$('.end').html('˙sǝןɔɹıɔ ɐp ǝʌoɯ uɐɔ n');
-		} else if ($('.circle').hasClass('circle')) {
-			$('.circle').addClass('box');
-			$('.top').removeClass('circle-top');
-			$('.two').removeClass('circle-two');
-			$('.three').removeClass('circle-three');
-			$('.four').removeClass('circle-four');
-			$('.five').removeClass('circle-five');
-			$('.six').removeClass('circle-six');
-			$('.circle').removeClass('circle');
-			$('.circles').html('circles.');
-			$('.title').html('u can move da boxes.');
-			$('.end').html('˙sǝxoq ɐp ǝʌoɯ uɐɔ n');
-		}
+		shapes();
+	});
+	
+	//u can reset da boxes.
+	$('.reset').mousedown(function(){
+		resetColors();
+		boxes();
+		center();
+		$('.center').removeClass('active').addClass('inactive');
+		$(this).removeClass('active').addClass('inactive');
 	});
 
 	//u can save da boxes.
