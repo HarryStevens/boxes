@@ -229,7 +229,24 @@ $(document).ready(function() {
 	//u can change da colors.
 	$('.colors').mousedown(function() {
 		colors();
-		$('.reset').addClass('active').removeClass('inactive');
+
+		var twoLeft = $('.two').css('left');
+		var twoTop = $('.two').css('top');
+		var threeLeft = $('.three').css('left');
+		var threeTop = $('.three').css('top');
+		var fourLeft = $('.four').css('left');
+		var fourTop = $('.four').css('top');
+		var fiveLeft = $('.five').css('left');
+		var fiveTop = $('.five').css('top');
+		var sixLeft = $('.six').css('left');
+		var sixTop = $('.six').css('top');
+
+		if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '19px') && (sixTop == '-5px')) {
+			$('.reset').addClass('inactive').removeClass('active');
+		} else {
+			$('.reset').addClass('active').removeClass('inactive');
+		}
+
 	});
 
 	var colorMenu = [{
@@ -254,7 +271,24 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('red');
-				$('.reset').addClass('active').removeClass('inactive');
+
+				var twoLeft = $('.two').css('left');
+				var twoTop = $('.two').css('top');
+				var threeLeft = $('.three').css('left');
+				var threeTop = $('.three').css('top');
+				var fourLeft = $('.four').css('left');
+				var fourTop = $('.four').css('top');
+				var fiveLeft = $('.five').css('left');
+				var fiveTop = $('.five').css('top');
+				var sixLeft = $('.six').css('left');
+				var sixTop = $('.six').css('top');
+
+				if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '19px') && (sixTop == '-5px')) {
+					$('.reset').addClass('inactive').removeClass('active');
+				} else {
+					$('.reset').addClass('active').removeClass('inactive');
+				}
+
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-red'
@@ -281,7 +315,24 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('orange');
-				$('.reset').addClass('active').removeClass('inactive');
+
+				var twoLeft = $('.two').css('left');
+				var twoTop = $('.two').css('top');
+				var threeLeft = $('.three').css('left');
+				var threeTop = $('.three').css('top');
+				var fourLeft = $('.four').css('left');
+				var fourTop = $('.four').css('top');
+				var fiveLeft = $('.five').css('left');
+				var fiveTop = $('.five').css('top');
+				var sixLeft = $('.six').css('left');
+				var sixTop = $('.six').css('top');
+
+				if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '19px') && (sixTop == '-5px')) {
+					$('.reset').addClass('inactive').removeClass('active');
+				} else {
+					$('.reset').addClass('active').removeClass('inactive');
+				}
+
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-orange'
@@ -308,7 +359,24 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('yellow');
-				$('.reset').addClass('active').removeClass('inactive');
+
+				var twoLeft = $('.two').css('left');
+				var twoTop = $('.two').css('top');
+				var threeLeft = $('.three').css('left');
+				var threeTop = $('.three').css('top');
+				var fourLeft = $('.four').css('left');
+				var fourTop = $('.four').css('top');
+				var fiveLeft = $('.five').css('left');
+				var fiveTop = $('.five').css('top');
+				var sixLeft = $('.six').css('left');
+				var sixTop = $('.six').css('top');
+
+				if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '19px') && (sixTop == '-5px')) {
+					$('.reset').addClass('inactive').removeClass('active');
+				} else {
+					$('.reset').addClass('active').removeClass('inactive');
+				}
+
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-yellow'
@@ -335,7 +403,24 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('green');
-				$('.reset').addClass('active').removeClass('inactive');
+
+				var twoLeft = $('.two').css('left');
+				var twoTop = $('.two').css('top');
+				var threeLeft = $('.three').css('left');
+				var threeTop = $('.three').css('top');
+				var fourLeft = $('.four').css('left');
+				var fourTop = $('.four').css('top');
+				var fiveLeft = $('.five').css('left');
+				var fiveTop = $('.five').css('top');
+				var sixLeft = $('.six').css('left');
+				var sixTop = $('.six').css('top');
+
+				if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '19px') && (sixTop == '-5px')) {
+					$('.reset').addClass('inactive').removeClass('active');
+				} else {
+					$('.reset').addClass('active').removeClass('inactive');
+				}
+
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-green'
@@ -362,7 +447,24 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('blue');
-				$('.reset').addClass('active').removeClass('inactive');
+
+				var twoLeft = $('.two').css('left');
+				var twoTop = $('.two').css('top');
+				var threeLeft = $('.three').css('left');
+				var threeTop = $('.three').css('top');
+				var fourLeft = $('.four').css('left');
+				var fourTop = $('.four').css('top');
+				var fiveLeft = $('.five').css('left');
+				var fiveTop = $('.five').css('top');
+				var sixLeft = $('.six').css('left');
+				var sixTop = $('.six').css('top');
+
+				if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '19px') && (sixTop == '-5px')) {
+					$('.reset').addClass('inactive').removeClass('active');
+				} else {
+					$('.reset').addClass('active').removeClass('inactive');
+				}
+
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-blue'
@@ -389,7 +491,24 @@ $(document).ready(function() {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('violet');
-				$('.reset').addClass('active').removeClass('inactive');
+
+				var twoLeft = $('.two').css('left');
+				var twoTop = $('.two').css('top');
+				var threeLeft = $('.three').css('left');
+				var threeTop = $('.three').css('top');
+				var fourLeft = $('.four').css('left');
+				var fourTop = $('.four').css('top');
+				var fiveLeft = $('.five').css('left');
+				var fiveTop = $('.five').css('top');
+				var sixLeft = $('.six').css('left');
+				var sixTop = $('.six').css('top');
+
+				if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '19px') && (sixTop == '-5px')) {
+					$('.reset').addClass('inactive').removeClass('active');
+				} else {
+					$('.reset').addClass('active').removeClass('inactive');
+				}
+
 			},
 			className : 'color-menu-item',
 			hoverClassName : 'color-menu-item-violet'
@@ -403,7 +522,7 @@ $(document).ready(function() {
 	//u can make da circles.
 	$('.circles').mousedown(function() {
 		shapes();
-	
+
 		var twoLeft = $('.two').css('left');
 		var twoTop = $('.two').css('top');
 		var threeLeft = $('.three').css('left');
@@ -414,26 +533,8 @@ $(document).ready(function() {
 		var fiveTop = $('.five').css('top');
 		var sixLeft = $('.six').css('left');
 		var sixTop = $('.six').css('top');
-		
-		if (
-			($('.box').hasClass('box')) &&
-			($('.top').hasClass('violet')) &&
-			($('.two').hasClass('blue')) &&
-			($('.three').hasClass('green')) &&
-			($('.four').hasClass('yellow')) &&
-			($('.five').hasClass('orange')) &&
-			($('.six').hasClass('red')) &&
-			(twoLeft=='96px') &&
-			(twoTop=='79px') &&
-			(threeLeft=='65px') &&
-			(threeTop=='44px') &&
-			(fourLeft=='43px') &&
-			(fourTop=='22px') &&
-			(fiveLeft=='27px') &&
-			(fiveTop=='6px') &&
-			(sixLeft=='19px') &&
-			(sixTop=='-5px')
-		) {
+
+		if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '19px') && (sixTop == '-5px')) {
 			$('.reset').addClass('inactive').removeClass('active');
 		}
 
