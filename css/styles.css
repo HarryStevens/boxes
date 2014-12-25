@@ -31,7 +31,6 @@ body {
 }
 .circle {
 	border: 2px solid;
-	border-radius: 50%;
 	transition: border-radius .5s, background .1s, border-color .1s;
 	-webkit-transition: border-radius .5s, background .1s, border-color .1s;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -64,12 +63,30 @@ body {
 	top: 22px;
 }
 .five {
-	left: 28px;
+	left: 27px;
 	top: 6px;
 }
 .six {
 	left: 19px;
 	top: -5px;
+}
+.circle-top {
+	border-radius: 300px;
+}
+.circle-two {
+	border-radius: 200px;
+}
+.circle-three {
+	border-radius: 131px;
+}
+.circle-four {
+	border-radius: 87px;
+}
+.circle-five {
+	border-radius: 57px;
+}
+.circle-six {
+	border-radius: 36px;
 }
 .violet {
 	background: #800080;

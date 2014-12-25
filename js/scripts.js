@@ -29,7 +29,7 @@ $(document).ready(function() {
 					'top' : '24px'
 				});
 				$('.five').css({
-					'left' : '28px',
+					'left' : '27px',
 					'top' : '6px'
 				});
 				$('.six').css({
@@ -329,12 +329,27 @@ $(document).ready(function() {
 	$('.circles').mousedown(function() {
 		if ($('.box').hasClass('box')) {
 			$('.box').addClass('circle');
+			//can't do border-radius: 50% because html2canvas
+			//won't render it in web-kit browsers. need a different
+			//circle class for each box.
+			$('.top').addClass('circle-top');
+			$('.two').addClass('circle-two');
+			$('.three').addClass('circle-three');
+			$('.four').addClass('circle-four');
+			$('.five').addClass('circle-five');
+			$('.six').addClass('circle-six');
 			$('.box').removeClass('box');
 			$('.circles').html('boxes.');
 			$('.title').html('u can move da circles.');
 			$('.end').html('˙sǝןɔɹıɔ ɐp ǝʌoɯ uɐɔ n');
 		} else if ($('.circle').hasClass('circle')) {
 			$('.circle').addClass('box');
+			$('.top').removeClass('circle-top');
+			$('.two').removeClass('circle-two');
+			$('.three').removeClass('circle-three');
+			$('.four').removeClass('circle-four');
+			$('.five').removeClass('circle-five');
+			$('.six').removeClass('circle-six');
 			$('.circle').removeClass('circle');
 			$('.circles').html('circles.');
 			$('.title').html('u can move da boxes.');
