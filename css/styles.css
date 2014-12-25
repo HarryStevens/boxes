@@ -106,13 +106,26 @@ body {
 }
 
 /*COLOR MENU*/
+table {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
 .context-menu {
 	padding: 2px;
 	background: #FFF;
 	border: 2px solid #FFF;
-	font-family: Helvetica, sans-serif;
+}
+.context-menu-theme-default .context-menu-item {
+	font-family: Helvetica;
 	font-size: 14px;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.context-menu-theme-default .context-menu-item:hover {
+	color: #FFF;
+}
+.color-menu-title {
+	background: #AAA;
+	color: #FFF;
+	padding: 5px;
+	text-align: center;
 }
 .color-menu-item {
 	background: #FFF;

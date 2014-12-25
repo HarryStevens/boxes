@@ -133,22 +133,22 @@ function resetColors() {
 
 //u can reset everything.
 function reset() {
-		var twoLeft = $('.two').css('left');
-		var twoTop = $('.two').css('top');
-		var threeLeft = $('.three').css('left');
-		var threeTop = $('.three').css('top');
-		var fourLeft = $('.four').css('left');
-		var fourTop = $('.four').css('top');
-		var fiveLeft = $('.five').css('left');
-		var fiveTop = $('.five').css('top');
-		var sixLeft = $('.six').css('left');
-		var sixTop = $('.six').css('top');
+	var twoLeft = $('.two').css('left');
+	var twoTop = $('.two').css('top');
+	var threeLeft = $('.three').css('left');
+	var threeTop = $('.three').css('top');
+	var fourLeft = $('.four').css('left');
+	var fourTop = $('.four').css('top');
+	var fiveLeft = $('.five').css('left');
+	var fiveTop = $('.five').css('top');
+	var sixLeft = $('.six').css('left');
+	var sixTop = $('.six').css('top');
 
-		if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '19px') && (sixTop == '-5px')) {
-			$('.reset').addClass('inactive').removeClass('active');
-		} else {
-			$('.reset').addClass('active').removeClass('inactive');
-		}
+	if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '19px') && (sixTop == '-5px')) {
+		$('.reset').addClass('inactive').removeClass('active');
+	} else {
+		$('.reset').addClass('active').removeClass('inactive');
+	}
 }
 
 //u can change da shapes.
@@ -219,7 +219,6 @@ function center() {
 	});
 }
 
-
 $(document).ready(function() {
 
 	//u can move da boxes.
@@ -248,26 +247,21 @@ $(document).ready(function() {
 		colors();
 		reset();
 	});
-
+	
 	var colorMenu = [{
-		'red.' : {
+		'red' : {
 			onclick : function(menuItem, menu) {
 				if ($(this).hasClass('red')) {
 					$(this).removeClass('red');
-				}
-				if ($(this).hasClass('orange')) {
+				} else if ($(this).hasClass('orange')) {
 					$(this).removeClass('orange');
-				}
-				if ($(this).hasClass('yellow')) {
+				} else if ($(this).hasClass('yellow')) {
 					$(this).removeClass('yellow');
-				}
-				if ($(this).hasClass('green')) {
+				} else if ($(this).hasClass('green')) {
 					$(this).removeClass('green');
-				}
-				if ($(this).hasClass('blue')) {
+				} else if ($(this).hasClass('blue')) {
 					$(this).removeClass('blue');
-				}
-				if ($(this).hasClass('violet')) {
+				} else if ($(this).hasClass('violet')) {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('red');
@@ -277,24 +271,19 @@ $(document).ready(function() {
 			hoverClassName : 'color-menu-item-red'
 		}
 	}, {
-		'orange.' : {
+		'orange' : {
 			onclick : function(menuItem, menu) {
 				if ($(this).hasClass('red')) {
 					$(this).removeClass('red');
-				}
-				if ($(this).hasClass('orange')) {
+				} else if ($(this).hasClass('orange')) {
 					$(this).removeClass('orange');
-				}
-				if ($(this).hasClass('yellow')) {
+				} else if ($(this).hasClass('yellow')) {
 					$(this).removeClass('yellow');
-				}
-				if ($(this).hasClass('green')) {
+				} else if ($(this).hasClass('green')) {
 					$(this).removeClass('green');
-				}
-				if ($(this).hasClass('blue')) {
+				} else if ($(this).hasClass('blue')) {
 					$(this).removeClass('blue');
-				}
-				if ($(this).hasClass('violet')) {
+				} else if ($(this).hasClass('violet')) {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('orange');
@@ -304,24 +293,19 @@ $(document).ready(function() {
 			hoverClassName : 'color-menu-item-orange'
 		}
 	}, {
-		'yellow.' : {
+		'yellow' : {
 			onclick : function(menuItem, menu) {
 				if ($(this).hasClass('red')) {
 					$(this).removeClass('red');
-				}
-				if ($(this).hasClass('orange')) {
+				} else if ($(this).hasClass('orange')) {
 					$(this).removeClass('orange');
-				}
-				if ($(this).hasClass('yellow')) {
+				} else if ($(this).hasClass('yellow')) {
 					$(this).removeClass('yellow');
-				}
-				if ($(this).hasClass('green')) {
+				} else if ($(this).hasClass('green')) {
 					$(this).removeClass('green');
-				}
-				if ($(this).hasClass('blue')) {
+				} else if ($(this).hasClass('blue')) {
 					$(this).removeClass('blue');
-				}
-				if ($(this).hasClass('violet')) {
+				} else if ($(this).hasClass('violet')) {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('yellow');
@@ -331,24 +315,19 @@ $(document).ready(function() {
 			hoverClassName : 'color-menu-item-yellow'
 		}
 	}, {
-		'green.' : {
+		'green' : {
 			onclick : function(menuItem, menu) {
 				if ($(this).hasClass('red')) {
 					$(this).removeClass('red');
-				}
-				if ($(this).hasClass('orange')) {
+				} else if ($(this).hasClass('orange')) {
 					$(this).removeClass('orange');
-				}
-				if ($(this).hasClass('yellow')) {
+				} else if ($(this).hasClass('yellow')) {
 					$(this).removeClass('yellow');
-				}
-				if ($(this).hasClass('green')) {
+				} else if ($(this).hasClass('green')) {
 					$(this).removeClass('green');
-				}
-				if ($(this).hasClass('blue')) {
+				} else if ($(this).hasClass('blue')) {
 					$(this).removeClass('blue');
-				}
-				if ($(this).hasClass('violet')) {
+				} else if ($(this).hasClass('violet')) {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('green');
@@ -358,24 +337,19 @@ $(document).ready(function() {
 			hoverClassName : 'color-menu-item-green'
 		}
 	}, {
-		'blue.' : {
+		'blue' : {
 			onclick : function(menuItem, menu) {
 				if ($(this).hasClass('red')) {
 					$(this).removeClass('red');
-				}
-				if ($(this).hasClass('orange')) {
+				} else if ($(this).hasClass('orange')) {
 					$(this).removeClass('orange');
-				}
-				if ($(this).hasClass('yellow')) {
+				} else if ($(this).hasClass('yellow')) {
 					$(this).removeClass('yellow');
-				}
-				if ($(this).hasClass('green')) {
+				} else if ($(this).hasClass('green')) {
 					$(this).removeClass('green');
-				}
-				if ($(this).hasClass('blue')) {
+				} else if ($(this).hasClass('blue')) {
 					$(this).removeClass('blue');
-				}
-				if ($(this).hasClass('violet')) {
+				} else if ($(this).hasClass('violet')) {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('blue');
@@ -385,24 +359,19 @@ $(document).ready(function() {
 			hoverClassName : 'color-menu-item-blue'
 		}
 	}, {
-		'violet.' : {
+		'violet' : {
 			onclick : function(menuItem, menu) {
 				if ($(this).hasClass('red')) {
 					$(this).removeClass('red');
-				}
-				if ($(this).hasClass('orange')) {
+				} else if ($(this).hasClass('orange')) {
 					$(this).removeClass('orange');
-				}
-				if ($(this).hasClass('yellow')) {
+				} else if ($(this).hasClass('yellow')) {
 					$(this).removeClass('yellow');
-				}
-				if ($(this).hasClass('green')) {
+				} else if ($(this).hasClass('green')) {
 					$(this).removeClass('green');
-				}
-				if ($(this).hasClass('blue')) {
+				} else if ($(this).hasClass('blue')) {
 					$(this).removeClass('blue');
-				}
-				if ($(this).hasClass('violet')) {
+				} else if ($(this).hasClass('violet')) {
 					$(this).removeClass('violet');
 				}
 				$(this).addClass('violet');
@@ -415,6 +384,7 @@ $(document).ready(function() {
 	$.contextMenu.shadow = false;
 	$(function() {
 		$('.box,.circle').contextMenu(colorMenu);
+		$('td').prepend('<div class="color-menu-title">colors</div>');
 	});
 
 	//u can make da circles.
@@ -456,9 +426,9 @@ $(document).ready(function() {
 		$('.img-title input').keyup(function() {
 			var imgTitle = $('.img-title input').val();
 
-			if ((imgTitle == '')&&($('.box').hasClass('box'))) {
+			if ((imgTitle == '') && ($('.box').hasClass('box'))) {
 				imgTitle = 'da boxes';
-			} else if ((imgTitle == '')&&($('.circle').hasClass('circle'))){
+			} else if ((imgTitle == '') && ($('.circle').hasClass('circle'))) {
 				imgTitle = 'da circles';
 			} else {
 				imgTitle == $('.img-title input').val();
