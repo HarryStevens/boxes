@@ -67,7 +67,7 @@
 					<div class="modal-content">
 
 						<div class="modal-header">
-							<label class="img-title">title:
+							<label class="img-title">
 								<input>
 								</input> </label>
 							<div class="button active close-modal">

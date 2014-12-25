@@ -345,10 +345,10 @@ $(document).ready(function() {
 	//u can save da boxes.
 	$('.save').mousedown(function() {
 		if ($('.box').hasClass('box')) {
-			$('.img-title input').attr('placeholder', 'da boxes');
+			$('.img-title input').attr('placeholder', 'u can name da boxes.');
 			$('.download').attr('download', 'da boxes.png');
 		} else if ($('.circle').hasClass('circle')) {
-			$('.img-title input').attr('placeholder', 'da circles');
+			$('.img-title input').attr('placeholder', 'u can name da circles.');
 			$('.download').attr('download', 'da circles.png');
 		}
 
@@ -357,7 +357,7 @@ $(document).ready(function() {
 			useCORS : true,
 			onrendered : function(canvas) {
 				img = canvas.toDataURL("image/jpg");
-				imgURL = '<img class="save-image" width="400px" src="' + img + '">';
+				imgURL = '<img class="save-image" width="500px" src="' + img + '">';
 				$('.modal-body').html(imgURL);
 				$('.download').attr('href', img);
 			},
