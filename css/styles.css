@@ -200,10 +200,10 @@ a:hover.button {
 /*MODAL*/
 .modal-header {
 	height: 60px;
-
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 	padding-top: 14px;
+	background: #eee;
 }
 .modal-dialog {
 	width: 536px;
@@ -222,7 +222,7 @@ a:hover.button {
 }
 .img-title input {
 	font-weight: normal;
-	border: 2px solid #000;
+	border: 2px solid #fff;
 	height: 31px;
 	width: 179px;
 	border-radius: 8px;

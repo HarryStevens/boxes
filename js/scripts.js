@@ -184,9 +184,6 @@ function boxes() {
 	$('.circles').html('circles.');
 	$('.title').html('u can move da boxes.');
 	$('.end').html('˙sǝxoq ɐp ǝʌoɯ uɐɔ n');
-
-	//conditionals for deactivating reset button on boxes click
-
 }
 
 //conditional function to be used when boxes./circles. button clicked
@@ -250,7 +247,6 @@ $(document).ready(function() {
 	$('.colors').mousedown(function() {
 		colors();
 		reset();
-
 	});
 
 	var colorMenu = [{
