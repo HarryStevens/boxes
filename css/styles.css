@@ -1,7 +1,7 @@
 body {
 	background-image: url('http://static.tumblr.com/hc6q6s4/qS6m2cjn7/stripe_17e52656a5e6249194369416c3357e76.png');
 	color: #000;
-	font-family: Helvetica;
+	font-family: Helvetica, sans-serif;
 	font-size: 16px;
 }
 
@@ -23,7 +23,7 @@ body {
 /*BOXES*/
 .box {
 	border: 2px solid;
-	border-radius: 8px;
+	border-radius: 0px;
 	transition: border-radius .5s, background .1s, border-color .1s;
 	-webkit-transition: border-radius .5s, background .1s, border-color .1s;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -116,45 +116,42 @@ body {
 /*COLOR MENU*/
 .context-menu {
 	padding: 2px;
-	background: #fff;
-	border: 2px solid #fff;
-	border-radius: 8px;
-	font-family: Helvetica;
+	background: #FFF;
+	border: 2px solid #FFF;
+	font-family: Helvetica, sans-serif;
 	font-size: 14px;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .color-menu-item {
-	background: #fff;
-	border-radius: 8px;
+	background: #FFF;
 }
 .color-menu-item-red {
-	background: red;
+	background: #FF0000;
 }
 .color-menu-item-orange {
-	background: orange;
+	background: #FFA500;
 }
 .color-menu-item-yellow {
-	background: yellow;
+	background: #CCCC00;
 }
 .color-menu-item-green {
-	background: green;
+	background: #008000;
 }
 .color-menu-item-blue {
-	background: blue;
+	background: #0000FF;
 }
 .color-menu-item-violet {
-	background: purple;
+	background: #800080;
 }
 .color-menu-item-hover {
-	font-family: Helvetica;
-	background: #eee;
+	font-family: Helvetica, sans-serif;
+	background: #EEE;
 }
 
 /*BUTTONS*/
 .button {
 	margin-right: 10px;
 	padding: 2px 4px;
-	border-radius: 8px;
 	float: left;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -164,25 +161,25 @@ body {
 	user-select: none;
 }
 .inactive {
-	border: 2px solid #eee;
-	color: #ddd;
-	background: #eee;
+	border: 2px solid #EEE;
+	color: #DDD;
+	background: #EEE;
 }
 .inactive:hover {
-	border: 2px solid #eee;
-	color: #ddd;
-	background: #eee;
+	border: 2px solid #EEE;
+	color: #DDD;
+	background: #EEE;
 	cursor: default;
 }
 .active {
-	border: 2px solid #aaa;
-	color: #fff;
-	background: #aaa;
+	border: 2px solid #AAA;
+	color: #FFF;
+	background: #AAA;
 	cursor: pointer;
 }
 .active:hover {
 	border: 2px solid #888;
-	color: #fff;
+	color: #FFF;
 	background: #888;
 	cursor: pointer;
 }
@@ -193,20 +190,18 @@ a:hover.button {
 	text-decoration: none;
 }
 .circles {
-	width: 62px;
+	width: 57px;
 	text-align: center;
 }
 
 /*MODAL*/
 .modal-header {
 	height: 60px;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
 	padding-top: 14px;
-	background: #eee;
+	background: #EEE;
 }
 .modal-dialog {
-	width: 536px;
+	width: 532px;
 }
 .modal-body {
 	margin: 0 auto;
@@ -214,18 +209,17 @@ a:hover.button {
 	background-image: url('http://static.tumblr.com/hc6q6s4/qS6m2cjn7/stripe_17e52656a5e6249194369416c3357e76.png');
 }
 .modal-content {
-	height: 644px;
-	border-radius: 10px;
+	height: 642px;
+	border-radius: 0px;
 }
 .img-title {
 	float: left;
 }
 .img-title input {
 	font-weight: normal;
-	border: 2px solid #fff;
+	border: 2px solid #FFF;
 	height: 31px;
 	width: 179px;
-	border-radius: 8px;
 	padding: 2px 8px;
 	outline-width: 0;
 	color: #000;

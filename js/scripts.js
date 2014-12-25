@@ -165,7 +165,7 @@ function circles() {
 	$('.five').addClass('circle-five');
 	$('.six').addClass('circle-six');
 	$('.box').removeClass('box');
-	$('.circles').html('boxes.');
+	$('.circles').html('boxes');
 	$('.title').html('u can move da circles.');
 	$('.end').html('˙sǝןɔɹıɔ ɐp ǝʌoɯ uɐɔ n');
 	$('.reset').addClass('active').removeClass('inactive');
@@ -181,7 +181,7 @@ function boxes() {
 	$('.five').removeClass('circle-five');
 	$('.six').removeClass('circle-six');
 	$('.circle').removeClass('circle');
-	$('.circles').html('circles.');
+	$('.circles').html('circles');
 	$('.title').html('u can move da boxes.');
 	$('.end').html('˙sǝxoq ɐp ǝʌoɯ uɐɔ n');
 }
@@ -456,8 +456,10 @@ $(document).ready(function() {
 		$('.img-title input').keyup(function() {
 			var imgTitle = $('.img-title input').val();
 
-			if (imgTitle == '') {
+			if ((imgTitle == '')&&($('.box').hasClass('box'))) {
 				imgTitle = 'da boxes';
+			} else if ((imgTitle == '')&&($('.circle').hasClass('circle'))){
+				imgTitle = 'da circles';
 			} else {
 				imgTitle == $('.img-title input').val();
 			}

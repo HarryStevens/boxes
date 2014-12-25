@@ -21,19 +21,19 @@
 		<div class="content">
 			<div class="controls">
 				<div class="button active colors">
-					colors.
+					colors
 				</div>
 				<div class="button active circles">
-					circles.
+					circles
 				</div>
 				<div class="button inactive center">
-					center.
+					center
 				</div>
 				<div class="button inactive reset">
-					reset.
+					reset
 				</div>				
 				<div class="button active save" data-toggle="modal" data-target="#save">
-					save.
+					save
 				</div>
 			</div><!-- End .controls -->
 
@@ -73,9 +73,9 @@
 								<input>
 								</input> </label>
 							<div class="button active close-modal">
-								cancel.
+								cancel
 							</div>
-							<a download="da boxes.png" class="button active download">download.</a>
+							<a download="da boxes.png" class="button active download">download</a>
 						</div>
 						<div class="modal-body">
 							...
