@@ -449,17 +449,20 @@ $(document).ready(function() {
 	});
 
 	$('#save .modal-dialog').draggable({
-		handle : ".modal-header"
+		handle : ".modal-header",
+		stop: function( event, ui ) {
+			$('.img-title input').focus();
+		}
 	});
 
 	$('#save').on('hidden.bs.modal', function() {
 		$('.img-title input').val('');
 		$('#save .modal-dialog').css({
-			'top':'0px',
-			'left':'0px'
+			'top' : '0px',
+			'left' : '0px'
 		})
 	})
-	
+
 	$('#save').on('shown.bs.modal', function() {
 		$('.img-title input').focus();
 	})
