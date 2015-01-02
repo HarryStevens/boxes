@@ -65,8 +65,8 @@ body {
 	top: 6px;
 }
 .six {
-	left: 19px;
-	top: -5px;
+	left: 21px;
+	top: -3px;
 }
 .circle-top {
 	border-radius: 300px;
@@ -75,16 +75,16 @@ body {
 	border-radius: 200px;
 }
 .circle-three {
-	border-radius: 131px;
+	border-radius: 135px;
 }
 .circle-four {
-	border-radius: 87px;
+	border-radius: 90px;
 }
 .circle-five {
-	border-radius: 57px;
+	border-radius: 60px;
 }
 .circle-six {
-	border-radius: 36px;
+	border-radius: 40px;
 }
 .violet {
 	background: #800080;
@@ -108,6 +108,7 @@ body {
 /*COLOR MENU*/
 table {
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	width: 100px;
 }
 .context-menu {
 	padding: 2px;
@@ -204,6 +205,7 @@ a:hover.button {
 	height: 60px;
 	padding-top: 14px;
 	background: #EEE;
+	cursor: move;
 }
 .modal-dialog {
 	width: 532px;
@@ -226,8 +228,8 @@ a:hover.button {
 	height: 31px;
 	width: 179px;
 	padding: 2px 8px;
-	outline-width: 0;
 	color: #000;
+	outline: 0;
 }
 .download {
 	float: right;

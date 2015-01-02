@@ -20,11 +20,11 @@
 	<body>
 		<div class="content">
 			<div class="controls">
-				<div class="button active colors">
-					colors
-				</div>
 				<div class="button active circles">
 					circles
+				</div>
+				<div class="button active colors">
+					colors
 				</div>
 				<div class="button inactive center">
 					center

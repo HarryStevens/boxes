@@ -144,7 +144,7 @@ function reset() {
 	var sixLeft = $('.six').css('left');
 	var sixTop = $('.six').css('top');
 
-	if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '19px') && (sixTop == '-5px')) {
+	if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '21px') && (sixTop == '-3px')) {
 		$('.reset').addClass('inactive').removeClass('active');
 	} else {
 		$('.reset').addClass('active').removeClass('inactive');
@@ -214,8 +214,8 @@ function center() {
 		'top' : '6px'
 	});
 	$('.six').css({
-		'left' : '19px',
-		'top' : '-5px'
+		'left' : '21px',
+		'top' : '-3px'
 	});
 }
 
@@ -226,9 +226,8 @@ $(document).ready(function() {
 		containment : 'parent',
 		//u can center da boxes.
 		drag : function() {
-			$('.center').addClass('active').removeClass('inactive');
+			$('.center,.reset').addClass('active').removeClass('inactive');
 			$('.box,.circle').removeClass('slowmove');
-			$('.reset').addClass('active').removeClass('inactive');
 		},
 		stop : function() {
 			$('.box,.circle').addClass('slowmove');
@@ -452,4 +451,8 @@ $(document).ready(function() {
 	$('#save').on('shown.bs.modal', function() {
 		$('.img-title input').focus();
 	})
+	
+	$('#save .modal-dialog').draggable({
+		handle: ".modal-header"
+	});
 });
