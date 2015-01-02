@@ -219,6 +219,7 @@ function center() {
 	});
 }
 
+
 $(document).ready(function() {
 
 	//u can move da boxes.
@@ -246,7 +247,7 @@ $(document).ready(function() {
 		colors();
 		reset();
 	});
-	
+
 	var colorMenu = [{
 		'red' : {
 			onclick : function(menuItem, menu) {
@@ -438,7 +439,6 @@ $(document).ready(function() {
 
 		$('.close-modal').mousedown(function() {
 			$('#save').modal('hide');
-			$('.img-title input').val('');
 		});
 
 		$('.download').click(function() {
@@ -448,11 +448,19 @@ $(document).ready(function() {
 
 	});
 
+	$('#save .modal-dialog').draggable({
+		handle : ".modal-header"
+	});
+
+	$('#save').on('hidden.bs.modal', function() {
+		$('.img-title input').val('');
+		$('#save .modal-dialog').css({
+			'top':'0px',
+			'left':'0px'
+		})
+	})
+	
 	$('#save').on('shown.bs.modal', function() {
 		$('.img-title input').focus();
 	})
-	
-	$('#save .modal-dialog').draggable({
-		handle: ".modal-header"
-	});
 });
