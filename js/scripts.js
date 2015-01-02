@@ -449,7 +449,8 @@ $(document).ready(function() {
 	});
 
 	$('#save .modal-dialog').draggable({
-		handle : ".modal-header",
+		handle : '.modal-header',
+		scroll: false,
 		stop: function( event, ui ) {
 			$('.img-title input').focus();
 		}
