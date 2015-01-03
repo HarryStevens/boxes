@@ -6,15 +6,12 @@
 		<link rel="icon" type="image/ico" href="icons/favicon.ico" />
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/jquery.contextmenu.css" />
+		<link rel="stylesheet" href="css/swipebox.min.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/jquery.contextmenu.js"></script>
-		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
-		<script type="text/javascript" src="js/html2canvas.js"></script>
-		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/jquery.swipebox.min.js"></script>
 		<title>Boxes</title>
 	</head>
 	<body>
@@ -26,12 +23,21 @@
 			<div class="gallery-title">
 				u can view da gallery.
 			</div>
-			<?php
-			$dirname = "images/";
+			<?php $dirname = "images/";
 			$images = glob($dirname . "*.png");
 			foreach ($images as $image) {
-				echo '<a href="' . $image . '"><img class="gallery-img" src="' . $image . '" /></a>';
+				echo '<a rel="gallery" title="u can see da slideshow." class="swipebox" href="' . $image . '"><img class="gallery-img" src="' . $image . '" /></a>';
 			}
 			?>
 		</div>
+		<script type="text/javascript">
+			;(function($) {
+
+				$('.swipebox').swipebox({
+					loopAtEnd: true
+				});
+
+			} )(jQuery);
+		</script>
+
 	</body>

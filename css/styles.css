@@ -271,6 +271,9 @@ a:hover.button, a:hover.button-left, a:hover.button-right {
 }
 
 /*GALLERY*/
+#swipebox-container {
+	background-image: url('http://static.tumblr.com/hc6q6s4/qS6m2cjn7/stripe_17e52656a5e6249194369416c3357e76.png');
+}
 .gallery-title {
 	font-size: 26px;
 	text-align: right;

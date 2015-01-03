@@ -467,38 +467,38 @@ $(document).ready(function() {
 	$('#save').on('shown.bs.modal', function() {
 		$('.img-title input').focus();
 	});
-	
+
 	//u can upload da boxes.
 	$('.upload').mousedown(function() {
-	var twoLeft = $('.two').css('left');
-	var twoTop = $('.two').css('top');
-	var threeLeft = $('.three').css('left');
-	var threeTop = $('.three').css('top');
-	var fourLeft = $('.four').css('left');
-	var fourTop = $('.four').css('top');
-	var fiveLeft = $('.five').css('left');
-	var fiveTop = $('.five').css('top');
-	var sixLeft = $('.six').css('left');
-	var sixTop = $('.six').css('top');
+		var twoLeft = $('.two').css('left');
+		var twoTop = $('.two').css('top');
+		var threeLeft = $('.three').css('left');
+		var threeTop = $('.three').css('top');
+		var fourLeft = $('.four').css('left');
+		var fourTop = $('.four').css('top');
+		var fiveLeft = $('.five').css('left');
+		var fiveTop = $('.five').css('top');
+		var sixLeft = $('.six').css('left');
+		var sixTop = $('.six').css('top');
 
-	if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '21px') && (sixTop == '-3px')) {
-		
-	} else {
+		if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '21px') && (sixTop == '-3px')) {
 
-		html2canvas($('#canvas'), {
-			logging : true,
-			useCORS : true,
-			onrendered : function(canvas) {
-				img = canvas.toDataURL("image/jpg");
-				//set hidden field's value to image data (base-64 string).
-				$('#imgVal').val(img);
-				//submit da form manually.
-				$('#imgForm').submit();
-			},
-			background : '#fff'
-		});
-	}
-		
+		} else {
+
+			html2canvas($('#canvas'), {
+				logging : true,
+				useCORS : true,
+				onrendered : function(canvas) {
+					img = canvas.toDataURL("image/jpg");
+					//set hidden field's value to image data (base-64 string).
+					$('#imgVal').val(img);
+					//submit da form manually.
+					$('#imgForm').submit();
+				},
+				background : '#fff'
+			});
+		}
+
 	});
-	
+
 });
