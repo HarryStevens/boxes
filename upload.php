@@ -4,18 +4,25 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="icon" type="image/ico" href="img/favicon.ico" />
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/jquery.contextmenu.css" />
 		<link rel="stylesheet" href="css/animsition.min.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.contextmenu.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript" src="js/html2canvas.js"></script>
 		<script type="text/javascript" src="js/jquery.animsition.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
 		<title>Boxes | Upload</title>
 	</head>
 	<body class="animsition">
 		<div class="controls controls-left">
-			<a class="button-left active animsition-link" href="/boxes"> home </a><br /><br />
-			<a class="button-left active animsition-link" href="gallery.php"> gallery </a>
+			<div class="button-left active animsition-link" href="/boxes"> home </div><br /><br />
+			<div class="button-left active animsition-link" href="gallery.php"> gallery </div>
 		</div>
 		<div class="content">
 			<div class="title">
@@ -40,26 +47,4 @@
 			echo "<img src='$latestImg' style='width:400px;margin:0 auto;display:table;' />";
 			?>
 		</div><!--End .content-->
-		<script type="text/javascript">
-				//u can animate da page change.
- $(".animsition").animsition({
-  
-    inClass               :   'fade-in-down',
-    outClass              :   'fade-out-up',
-    inDuration            :    400,
-    outDuration           :    400,
-    linkElement           :   '.animsition-link', 
-    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
-    loading               :    true,
-    loadingParentElement  :   'body', //animsition wrapper element
-    loadingClass          :   'animsition-loading',
-    unSupportCss          : [ 'animation-duration',
-                              '-webkit-animation-duration',
-                              '-o-animation-duration'
-                            ],
-    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser. 
-    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    
-  });
-		</script>
 	</body>

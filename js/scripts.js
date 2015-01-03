@@ -493,7 +493,29 @@ $(document).ready(function() {
 					//set hidden field's value to image data (base-64 string).
 					$('#imgVal').val(img);
 					//submit da form manually.
-					$('#imgForm').submit();
+					$.post('upload.php', $('#imgForm').serialize());
+					$('#upload').modal('show');
+					$('.close-modal').mousedown(function() {
+						$('#upload').modal('hide');
+					});
+					
+					//add da image to da modal.
+					imgURL = '<img class="save-image" width="500px" src="' + img + '">';
+					$('.modal-body').html(imgURL);
+					
+					//drag da modal.
+					$('#upload .modal-dialog').draggable({
+						handle : '.modal-header',
+						scroll : false
+					});
+					
+					//return da modal to center.
+					$('#upload').on('hidden.bs.modal', function() {
+						$('#upload .modal-dialog').css({
+							'top' : '0px',
+							'left' : '0px'
+						})
+					})
 				},
 				background : '#fff'
 			});
@@ -502,24 +524,21 @@ $(document).ready(function() {
 	});
 
 	//u can animate da page change.
- $(".animsition").animsition({
-  
-    inClass               :   'fade-in-down',
-    outClass              :   'fade-out-up',
-    inDuration            :    400,
-    outDuration           :    400,
-    linkElement           :   '.animsition-link', 
-    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
-    loading               :    true,
-    loadingParentElement  :   'body', //animsition wrapper element
-    loadingClass          :   'animsition-loading',
-    unSupportCss          : [ 'animation-duration',
-                              '-webkit-animation-duration',
-                              '-o-animation-duration'
-                            ],
-    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser. 
-    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    
-  });
+	$(".animsition").animsition({
+
+		inClass : 'fade-in-down',
+		outClass : 'fade-out-up',
+		inDuration : 400,
+		outDuration : 400,
+		linkElement : '.animsition-link',
+		// e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+		loading : true,
+		loadingParentElement : 'body', //animsition wrapper element
+		loadingClass : 'animsition-loading',
+		unSupportCss : ['animation-duration', '-webkit-animation-duration', '-o-animation-duration'],
+		//"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+		//The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+
+	});
 
 });

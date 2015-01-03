@@ -192,7 +192,7 @@ table {
 }
 .button {
 	margin-right: 10px;
-	padding: 2px 4px;
+	padding: 4px 4px;
 	float: left;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -284,12 +284,15 @@ a:active.button, a:active.button-left, a:active.button-right {
 }
 .gallery-title {
 	font-size: 26px;
-	text-align: right;
+	text-align: center;
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
 .gallery-img {
 	float: left;
-	width: 290px;
-	margin-right: 10px;
+	width: 100%;
+}
+.gallery-modal-header {
+	float: left;
+	font-size: 26px;
 }

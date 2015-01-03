@@ -88,9 +88,34 @@
 					</div><!-- End .modal-content -->
 				</div><!--End .modal-dialog -->
 			</div><!-- End .modal-->
+
+			<div class="modal fade" id="upload" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" data-keyboard="false">
+				<div class="modal-dialog">
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<div class="gallery-modal-header">
+								u added to da gallery.
+							</div>
+							<div class="button active close-modal">
+								home
+							</div>
+							<a href="gallery.php" class="button-left active animsition-link" style="margin-right:10px;">gallery</a>
+							
+
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+					</div><!-- End .modal-content -->
+				</div><!--End .modal-dialog -->
+			</div><!-- End .modal-->
+
 		</div><!-- End .content -->
 		<div class="controls controls-right">
-			<a href="gallery.php" class="button-right active animsition-link"> gallery </a>
+			<div href="gallery.php" class="button-right active animsition-link">
+				gallery
+			</div>
 			<br />
 			<br />
 			<div class="button-right active save" data-toggle="modal" data-target="#save">
@@ -98,7 +123,9 @@
 			</div>
 			<br />
 			<br />
-			<div class="button-right inactive upload"> upload </div>
+			<div class="button-right inactive upload">
+				upload
+			</div>
 			<br />
 			<br />
 			<form method="POST" enctype="multipart/form-data" action="upload.php" id="imgForm">
