@@ -7,13 +7,22 @@ body {
 
 /*WRAPPERS*/
 .content {
-	margin: 10px auto;
-	display: table;
+	margin-left: 0px;
+	float: left;
+	width: 41.7%;
 }
 .controls {
-	margin-left: 0px;
-	padding: 0px;
-	margin-bottom: 26px;
+	margin-top: 37px;
+	float: left;
+	width: 29.14%;
+}
+.controls-left {
+	text-align: right;
+	padding-right: 10px;
+}
+.controls-right {
+	text-align: left;
+	padding-left: 10px;
 }
 .title {
 	font-size: 26px;
@@ -155,6 +164,32 @@ table {
 }
 
 /*BUTTONS*/
+.button-left {
+	margin-bottom: 10px;
+	padding: 2px 4px;
+	text-align: center;
+	float: right;
+	width: 68px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.button-right {
+	margin-bottom: 10px;
+	padding: 2px 4px;
+	text-align: center;
+	float: left;
+	width: 68px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 .button {
 	margin-right: 10px;
 	padding: 2px 4px;
@@ -189,15 +224,11 @@ table {
 	background: #888;
 	cursor: pointer;
 }
-a.button {
+a.button, a.button-left, a.button-right {
 	text-decoration: none;
 }
-a:hover.button {
+a:hover.button, a:hover.button-left, a:hover.button-right {
 	text-decoration: none;
-}
-.circles {
-	width: 57px;
-	text-align: center;
 }
 
 /*MODAL*/
@@ -239,3 +270,15 @@ a:hover.button {
 	margin-right: 0px;
 }
 
+/*GALLERY*/
+.gallery-title {
+	font-size: 26px;
+	text-align: right;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.gallery-img {
+	float: left;
+	width: 290px;
+	margin-right: 10px;
+}

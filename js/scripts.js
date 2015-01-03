@@ -145,9 +145,9 @@ function reset() {
 	var sixTop = $('.six').css('top');
 
 	if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '21px') && (sixTop == '-3px')) {
-		$('.reset').addClass('inactive').removeClass('active');
+		$('.reset,.upload').addClass('inactive').removeClass('active');
 	} else {
-		$('.reset').addClass('active').removeClass('inactive');
+		$('.reset,.upload').addClass('active').removeClass('inactive');
 	}
 }
 
@@ -156,7 +156,7 @@ function reset() {
 function circles() {
 	$('.box').addClass('circle');
 	//can't do border-radius: 50% because html2canvas
-	//won't render it in web-kit browsers. need a different
+	//won't render it in webkit browsers. need a different
 	//circle class for each box.
 	$('.top').addClass('circle-top');
 	$('.two').addClass('circle-two');
@@ -227,7 +227,7 @@ $(document).ready(function() {
 		containment : 'parent',
 		//u can center da boxes.
 		drag : function() {
-			$('.center,.reset').addClass('active').removeClass('inactive');
+			$('.center,.reset,.upload').addClass('active').removeClass('inactive');
 			$('.box,.circle').removeClass('slowmove');
 		},
 		stop : function() {
@@ -235,7 +235,7 @@ $(document).ready(function() {
 			$('.center').mousedown(function() {
 				$(this).addClass('inactive').removeClass('active');
 				if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red'))) {
-					$('.reset').addClass('inactive').removeClass('active');
+					$('.reset,.upload').addClass('inactive').removeClass('active');
 				}
 				center();
 			});
@@ -398,7 +398,7 @@ $(document).ready(function() {
 		resetColors();
 		boxes();
 		center();
-		$('.center,.reset').removeClass('active').addClass('inactive');
+		$('.center,.reset,.upload').removeClass('active').addClass('inactive');
 	});
 
 	//u can save da boxes.
@@ -450,8 +450,8 @@ $(document).ready(function() {
 
 	$('#save .modal-dialog').draggable({
 		handle : '.modal-header',
-		scroll: false,
-		stop: function( event, ui ) {
+		scroll : false,
+		stop : function(event, ui) {
 			$('.img-title input').focus();
 		}
 	});
@@ -466,5 +466,39 @@ $(document).ready(function() {
 
 	$('#save').on('shown.bs.modal', function() {
 		$('.img-title input').focus();
-	})
+	});
+	
+	//u can upload da boxes.
+	$('.upload').mousedown(function() {
+	var twoLeft = $('.two').css('left');
+	var twoTop = $('.two').css('top');
+	var threeLeft = $('.three').css('left');
+	var threeTop = $('.three').css('top');
+	var fourLeft = $('.four').css('left');
+	var fourTop = $('.four').css('top');
+	var fiveLeft = $('.five').css('left');
+	var fiveTop = $('.five').css('top');
+	var sixLeft = $('.six').css('left');
+	var sixTop = $('.six').css('top');
+
+	if (($('.box').hasClass('box')) && ($('.top').hasClass('violet')) && ($('.two').hasClass('blue')) && ($('.three').hasClass('green')) && ($('.four').hasClass('yellow')) && ($('.five').hasClass('orange')) && ($('.six').hasClass('red')) && (twoLeft == '96px') && (twoTop == '79px') && (threeLeft == '65px') && (threeTop == '44px') && (fourLeft == '43px') && (fourTop == '22px') && (fiveLeft == '27px') && (fiveTop == '6px') && (sixLeft == '21px') && (sixTop == '-3px')) {
+		
+	} else {
+
+		html2canvas($('#canvas'), {
+			logging : true,
+			useCORS : true,
+			onrendered : function(canvas) {
+				img = canvas.toDataURL("image/jpg");
+				//set hidden field's value to image data (base-64 string).
+				$('#imgVal').val(img);
+				//submit da form manually.
+				$('#imgForm').submit();
+			},
+			background : '#fff'
+		});
+	}
+		
+	});
+	
 });

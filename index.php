@@ -18,24 +18,21 @@
 		<title>Boxes</title>
 	</head>
 	<body>
+		<div class="controls controls-left">
+			<div class="button-left active circles">
+				circles
+			</div><br /><br />
+			<div class="button-left active colors">
+				colors
+			</div><br /><br />
+			<div class="button-left inactive center">
+				center
+			</div><br /><br />
+			<div class="button-left inactive reset">
+				reset
+			</div>
+		</div><!-- End .controls-left -->
 		<div class="content">
-			<div class="controls">
-				<div class="button active circles">
-					circles
-				</div>
-				<div class="button active colors">
-					colors
-				</div>
-				<div class="button inactive center">
-					center
-				</div>
-				<div class="button inactive reset">
-					reset
-				</div>				
-				<div class="button active save" data-toggle="modal" data-target="#save">
-					save
-				</div>
-			</div><!-- End .controls -->
 
 			<div id="canvas">
 				<div class="title">
@@ -84,5 +81,17 @@
 				</div><!--End .modal-dialog -->
 			</div><!-- End .modal-->
 		</div><!-- End .content -->
+		<div class="controls controls-right">
+			<a class="button-right active" href="gallery.php"> gallery </a><br /><br />
+			<div class="button-right inactive upload">
+				upload
+			</div><br /><br />
+			<div class="button-right active save" data-toggle="modal" data-target="#save">
+				save
+			</div><br /><br />
+			<form method="POST" enctype="multipart/form-data" action="upload.php" id="imgForm">
+				<input type="hidden" name="imgVal" id="imgVal" value="" />
+			</form>
+		</div><!-- End .controls-right -->
 	</body>
 </html>
