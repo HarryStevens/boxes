@@ -3,19 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="icon" type="image/ico" href="icons/favicon.ico" />
+		<link rel="icon" type="image/ico" href="img/favicon.ico" />
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/jquery.contextmenu.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/jquery.contextmenu.js"></script>
-		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
-		<script type="text/javascript" src="js/html2canvas.js"></script>
-		<script type="text/javascript" src="js/scripts.js"></script>
-		<title>Boxes</title>
+		<title>Boxes | Upload</title>
 	</head>
 	<body>
 		<div class="controls controls-left">
