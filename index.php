@@ -100,7 +100,7 @@
 							<div class="button active close-modal">
 								home
 							</div>
-							<a href="gallery.php" class="button-left active animsition-link" style="margin-right:10px;">gallery</a>
+							<a href="gallery" class="button-left active animsition-link" style="margin-right:10px;">gallery</a>
 							
 
 						</div>
@@ -113,7 +113,7 @@
 
 		</div><!-- End .content -->
 		<div class="controls controls-right">
-			<div href="gallery.php" class="button-right active animsition-link">
+			<div href="gallery" class="button-right active animsition-link">
 				gallery
 			</div>
 			<br />
