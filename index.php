@@ -83,11 +83,11 @@
 		</div><!-- End .content -->
 		<div class="controls controls-right">
 			<a class="button-right active" href="gallery.php"> gallery </a><br /><br />
-			<div class="button-right inactive upload">
-				upload
-			</div><br /><br />
 			<div class="button-right active save" data-toggle="modal" data-target="#save">
 				save
+			</div><br /><br />
+			<div class="button-right inactive upload">
+				upload
 			</div><br /><br />
 			<form method="POST" enctype="multipart/form-data" action="upload.php" id="imgForm">
 				<input type="hidden" name="imgVal" id="imgVal" value="" />

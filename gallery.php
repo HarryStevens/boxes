@@ -25,7 +25,10 @@
 			</div>
 			<?php $dirname = "images/";
 			$images = glob($dirname . "*.png");
-			foreach ($images as $image) {
+			
+			//Reverse the array so that most recent comes first.
+			$reverse = array_reverse($images, true);
+			foreach ($reverse as $image) {
 				echo '<a rel="gallery" title="u can see da slideshow." class="swipebox" href="' . $image . '"><img class="gallery-img" src="' . $image . '" /></a>';
 			}
 			?>

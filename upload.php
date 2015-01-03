@@ -26,15 +26,14 @@
 
 			//Get the base-64 string from data
 			$filteredData = substr($_POST['imgVal'], strpos($_POST['imgVal'], ",") + 1);
-
 			//Decode the string
 			$unencodedData = base64_decode($filteredData);
-
 			$length = 10;
-
+			
+			//Create a file name that will be ordered based on time of submission. Array to be reversed on display.
 			$randomString = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length);
-
-			$latestImg = "images/$randomString.png";
+			$timestamp = time();
+			$latestImg = "images/$timestamp-$randomString.png";
 
 			//Save the image
 			file_put_contents($latestImg, $unencodedData);
