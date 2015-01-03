@@ -98,7 +98,7 @@
 			</div>
 			<br />
 			<br />
-			<a class="button-right inactive upload animsition-link" href="upload.php"> upload </a>
+			<div class="button-right inactive upload"> upload </div>
 			<br />
 			<br />
 			<form method="POST" enctype="multipart/form-data" action="upload.php" id="imgForm">
