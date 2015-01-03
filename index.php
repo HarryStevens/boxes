@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/jquery.contextmenu.css" />
+		<link rel="stylesheet" href="css/animsition.min.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
@@ -14,20 +15,27 @@
 		<script type="text/javascript" src="js/jquery.contextmenu.js"></script>
 		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
 		<script type="text/javascript" src="js/html2canvas.js"></script>
+		<script type="text/javascript" src="js/jquery.animsition.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
 		<title>Boxes</title>
 	</head>
-	<body>
+	<body class="animsition">
 		<div class="controls controls-left">
 			<div class="button-left active circles">
 				circles
-			</div><br /><br />
+			</div>
+			<br />
+			<br />
 			<div class="button-left active colors">
 				colors
-			</div><br /><br />
+			</div>
+			<br />
+			<br />
 			<div class="button-left inactive center">
 				center
-			</div><br /><br />
+			</div>
+			<br />
+			<br />
 			<div class="button-left inactive reset">
 				reset
 			</div>
@@ -82,13 +90,17 @@
 			</div><!-- End .modal-->
 		</div><!-- End .content -->
 		<div class="controls controls-right">
-			<a class="button-right active" href="gallery.php"> gallery </a><br /><br />
+			<a href="gallery.php" class="button-right active animsition-link"> gallery </a>
+			<br />
+			<br />
 			<div class="button-right active save" data-toggle="modal" data-target="#save">
 				save
-			</div><br /><br />
-			<div class="button-right inactive upload">
-				upload
-			</div><br /><br />
+			</div>
+			<br />
+			<br />
+			<a class="button-right inactive upload animsition-link" href="upload.php"> upload </a>
+			<br />
+			<br />
 			<form method="POST" enctype="multipart/form-data" action="upload.php" id="imgForm">
 				<input type="hidden" name="imgVal" id="imgVal" value="" />
 			</form>
