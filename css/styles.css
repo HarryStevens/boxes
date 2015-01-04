@@ -298,6 +298,9 @@ a:active.button, a:active.button-left, a:active.button-right {
 }
 
 /*INFO*/
+#info .modal-dialog {
+	top: 40px;
+}
 #info .modal-content {
 	height: 344px;
 }

@@ -86,7 +86,7 @@
 			<br />
 			<br />
 			<div class="button-right inactive upload">
-				upload
+				submit
 			</div>
 			<br />
 			<br />
@@ -122,7 +122,7 @@
 
 					<div class="modal-header">
 						<div class="gallery-modal-header">
-							u added to da gallery.
+							danx for ur submission.
 						</div>
 						<div class="button active close-modal">
 							home
@@ -157,7 +157,7 @@
 									<li>click and drag da boxes.</li>
 									<li>right-click da boxes to change da colors.</li>
 									<li>use da controls on da left to play.</li>
-									<li>press da buttons on da right to view da gallery, save da boxes to da hard drive, or upload da boxes to da gallery.</li>
+									<li>press da buttons on da right to view da gallery, save da boxes to da hard drive, or submit da boxes to da gallery.</li>
 									</ol>
 								</div>
 
@@ -178,4 +178,7 @@
 		
 	</body>
 </html>
+
+
+
 

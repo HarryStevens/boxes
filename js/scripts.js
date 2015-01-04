@@ -532,7 +532,7 @@ $(document).ready(function() {
 	});
 	$('#info').on('hidden.bs.modal', function() {
 		$('#info .modal-dialog').css({
-			'top' : '0px',
+			'top' : '40px',
 			'left' : '0px'
 		})
 	})
