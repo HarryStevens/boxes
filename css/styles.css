@@ -296,3 +296,22 @@ a:active.button, a:active.button-left, a:active.button-right {
 	float: left;
 	font-size: 26px;
 }
+
+/*INFO*/
+#info .modal-content {
+	height: 344px;
+}
+#info ol {
+	margin-left: -12px;
+}
+.info-left {
+	width: 240px;
+	margin-right: 20px;
+	float: left;
+	border-right: 1px solid #ccc;
+	padding-right: 20px;
+}
+.info-right {
+	width: 240px;
+	float: left;
+}

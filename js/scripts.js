@@ -417,7 +417,7 @@ $(document).ready(function() {
 			onrendered : function(canvas) {
 				img = canvas.toDataURL("image/jpg");
 				imgURL = '<img class="save-image" width="500px" src="' + img + '">';
-				$('.modal-body').html(imgURL);
+				$('#save .modal-body').html(imgURL);
 				$('.download').attr('href', img);
 			},
 			background : '#fff'
@@ -498,17 +498,17 @@ $(document).ready(function() {
 					$('.close-modal').mousedown(function() {
 						$('#upload').modal('hide');
 					});
-					
+
 					//add da image to da modal.
 					imgURL = '<img class="save-image" width="500px" src="' + img + '">';
-					$('.modal-body').html(imgURL);
-					
+					$('#upload .modal-body').html(imgURL);
+
 					//drag da modal.
 					$('#upload .modal-dialog').draggable({
 						handle : '.modal-header',
 						scroll : false
 					});
-					
+
 					//return da modal to center.
 					$('#upload').on('hidden.bs.modal', function() {
 						$('#upload .modal-dialog').css({
@@ -523,8 +523,26 @@ $(document).ready(function() {
 
 	});
 
+	//u can open da info
+	$('.info').mousedown(function() {
+		$('#info').modal('show');
+	});
+	$('.close-info').mousedown(function() {
+		$('#info').modal('hide');
+	});
+	$('#info').on('hidden.bs.modal', function() {
+		$('#info .modal-dialog').css({
+			'top' : '0px',
+			'left' : '0px'
+		})
+	})
+	$('#info .modal-dialog').draggable({
+		handle : '.modal-header',
+		scroll : false
+	});
+	
 	//u can animate da page change.
-	$(".animsition").animsition({
+	$('.animsition').animsition({
 
 		inClass : 'fade-in-down',
 		outClass : 'fade-out-up',
