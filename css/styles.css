@@ -301,6 +301,9 @@ a:active.button, a:active.button-left, a:active.button-right {
 #info .modal-content {
 	height: 344px;
 }
+#info .modal-body {
+	background-image: none;
+}
 #info ol {
 	margin-left: -12px;
 }
