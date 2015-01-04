@@ -1,20 +1,21 @@
 body {
-	background-image: url('http://static.tumblr.com/hc6q6s4/qS6m2cjn7/stripe_17e52656a5e6249194369416c3357e76.png');
+	background: #CBCAAA;
 	color: #000;
 	font-family: Helvetica, sans-serif;
 	font-size: 16px;
+	margin: 0 auto;
+	display: table;
 }
 
 /*WRAPPERS*/
 .content {
 	margin-left: 0px;
 	float: left;
-	width: 41.7%;
+	width: 600px;
 }
 .controls {
 	margin-top: 37px;
 	float: left;
-	width: 29.14%;
 }
 .controls-left {
 	text-align: right;
@@ -252,7 +253,7 @@ a:active.button, a:active.button-left, a:active.button-right {
 .modal-body {
 	margin: 0 auto;
 	display: table;
-	background-image: url('http://static.tumblr.com/hc6q6s4/qS6m2cjn7/stripe_17e52656a5e6249194369416c3357e76.png');
+	background: #FFF;
 }
 .modal-content {
 	height: 642px;
@@ -280,7 +281,7 @@ a:active.button, a:active.button-left, a:active.button-right {
 
 /*GALLERY*/
 #swipebox-container {
-	background-image: url('http://static.tumblr.com/hc6q6s4/qS6m2cjn7/stripe_17e52656a5e6249194369416c3357e76.png');
+	background: #CBCAAA;
 }
 .gallery-title {
 	font-size: 26px;
@@ -305,7 +306,7 @@ a:active.button, a:active.button-left, a:active.button-right {
 	height: 344px;
 }
 #info .modal-body {
-	background-image: none;
+	background: #FFF;
 }
 #info ol {
 	margin-left: -12px;
