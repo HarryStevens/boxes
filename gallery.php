@@ -36,7 +36,10 @@
 				//Reverse the array so that most recent comes first.
 				$reverse = array_reverse($images, true);
 				foreach ($reverse as $image) {
-					echo '<div class="col-md-3 col-sm-4 col-xs-6"><a rel="gallery" title="u can see da slideshow." class="swipebox" href="' . $image . '"><img class="gallery-img" src="' . $image . '" /></a></div>';
+					$explode = explode('^',$image);
+					$explode2 = explode('.', $explode[1]);
+					$title = $explode2[0];
+					echo '<div class="col-md-3 col-sm-4 col-xs-6"><a rel="gallery" title="'.$title.'" class="swipebox" href="' . $image . '"><img class="gallery-img" src="' . $image . '" /></a></div>';
 				}
 				?>
 			</div>
@@ -45,7 +48,8 @@
 				;(function($) {
 
 					$('.swipebox').swipebox({
-						loopAtEnd : true
+						loopAtEnd : true,
+						hideBarsDelay : 1200000
 					});
 
 				} )(jQuery);

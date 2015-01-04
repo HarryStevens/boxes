@@ -40,7 +40,8 @@
 			//Create a file name that will be ordered based on time of submission. Array to be reversed on display.
 			$randomString = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length);
 			$timestamp = time();
-			$latestImg = "images/$timestamp-$randomString.png";
+			$date = date('F j, Y, g:i a', time() + 1 * 2 * 60 * 60);
+			$latestImg = "images/$timestamp-$randomString^$date.png";
 
 			//Save the image
 			file_put_contents($latestImg, $unencodedData);

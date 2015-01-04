@@ -119,6 +119,7 @@ body {
 table {
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	width: 100px;
+	margin-left: -340px;
 }
 .context-menu {
 	padding: 2px;
@@ -296,6 +297,10 @@ a:active.button, a:active.button-left, a:active.button-right {
 .gallery-modal-header {
 	float: left;
 	font-size: 26px;
+}
+.slide img {
+	max-height: 85% !important;
+	max-width: 85% !important;
 }
 
 /*INFO*/
