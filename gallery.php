@@ -18,6 +18,7 @@
 <script type="text/javascript" src="js/html2canvas.js"></script>
 <script type="text/javascript" src="js/jquery.animsition.min.js"></script>
 <script type="text/javascript" src="js/jquery.swipebox.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 <title>Boxes | Gallery</title>
 </head>
@@ -30,22 +31,27 @@ home
 u can view da gallery.
 </div>
 <div class="row">
-<?php $dirname="images/";
-	$images=glob($dirname."*.png");
+<?php $dirname = "images/";
+	$images = glob($dirname . "*.png");
 	//Reverse the array so that most recent comes first.
-	$reverse=array_reverse($images,true);
-	foreach($reverse as $image) {
-	$explode=explode('^',$image);
-	$explode2=explode('.',$explode[1]);
-	$title=$explode2[0];
-	echo '<div class="col-md-2 col-sm-4 col-xs-6"><a rel="gallery" title="'.$title.'" class="swipebox" href="'.$image.'"><img class="gallery-img" src="'.$image.'" /></a></div>';
-	//<a href="JavaScript:window.open(\'http://www.facebook.com/sharer.php?u='.$image.'\',\'\',\'width=657,height=400,scrollbars=1\')"><img src="https://www.facebook.com/images/fb_icon_325x325.png" width="20px"></a></div>';
+	$reverse = array_reverse($images, true);
+	foreach ($reverse as $image) {
+		$explode = explode('^', $image);
+		$explode2 = explode('.', $explode[1]);
+		$title = $explode2[0];
+		echo '<div class="col-md-2 col-sm-4 col-xs-6"><a rel="gallery" title="' . $title . '" class="swipebox" href="' . $image . '"><img class="gallery-img lazy" data-original="' . $image . '" /></a></div>';
+		//<a href="JavaScript:window.open(\'http://www.facebook.com/sharer.php?u='.$image.'\',\'\',\'width=657,height=400,scrollbars=1\')"><img src="https://www.facebook.com/images/fb_icon_325x325.png" width="20px"></a></div>';
 	}
 ?>
 </div>
 </div><!-- End .container-fluid -->
-<script type="text/javascript">		
+<script type="text/javascript">
 	$(document).ready(function() {
+		
+		//lazy loading
+		$("img.lazy").lazyload({
+			effect : 'fadeIn',
+		});
 
 		(function($) {
 
@@ -57,19 +63,31 @@ u can view da gallery.
 		} )(jQuery);
 
 		//dynamically set img height so that all imgs, regardless of upload browser, have the same height
-		function calcHeight(){
-		var imgWidth = $('.gallery-img').css('width');
-		var imgWidthNum = imgWidth.split('p')[0];
-		var imgHeight = imgWidthNum*1.09523809524;
-		console.log('New Height: '+imgHeight);
-		$('.gallery-img').css('height',imgHeight);
+		function calcHeight() {
+
+			//var imgWidth = $('.gallery-img').css('width');
+			var windowWidth = $(window).width();
+			var imgWidth = windowWidth * 0.14583333333;
+			var imgWidthNum = imgWidth.split('p')[0];
+			var imgHeight = imgWidthNum * 1.09523809524;
+			console.log('New Height: ' + imgHeight);
+			$('img.lazy').attr('width', imgWidth);
+			$('img.lazy').attr('height', imgHeight);
 		}
+
 		calcHeight();
-		$(window).resize(function(){
+		$(window).resize(function() {
 			calcHeight();
 		});
 
+	});
 
-	}); 
+	//scroll the page 1px 140ms after page loads, so that the lazy loading can begin
+	window.setTimeout(function() {
+		var y = $(window).scrollTop();
+		//your current y position on the page
+		$(window).scrollTop(y + 1);
+	}, 200);
+
 </script>
 </body>
