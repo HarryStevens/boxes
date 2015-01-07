@@ -47,7 +47,7 @@ u can view da gallery.
 </div><!-- End .container-fluid -->
 <script type="text/javascript">
 	$(document).ready(function() {
-		
+
 		//lazy loading
 		$("img.lazy").lazyload({
 			effect : 'fadeIn',
@@ -65,11 +65,21 @@ u can view da gallery.
 		//dynamically set img height so that all imgs, regardless of upload browser, have the same height
 		function calcHeight() {
 
-			//var imgWidth = $('.gallery-img').css('width');
 			var windowWidth = $(window).width();
-			var imgWidth = windowWidth * 0.14583333333;
-			var imgWidthNum = imgWidth.split('p')[0];
-			var imgHeight = imgWidthNum * 1.09523809524;
+
+			//variable to calculate width changes based on window width due to responsive column resizing.
+			var x;
+			if (windowWidth >= 992) {
+				x = .14583333333;
+			} else if (windowWidth >= 768) {
+				x = .30241935483;
+			} else {
+				x = .46153846153;
+			}
+
+			var imgWidth = windowWidth * x;
+			console.log('New Width: ' + imgWidth);
+			var imgHeight = imgWidth * 1.09523809524;
 			console.log('New Height: ' + imgHeight);
 			$('img.lazy').attr('width', imgWidth);
 			$('img.lazy').attr('height', imgHeight);
