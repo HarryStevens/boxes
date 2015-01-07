@@ -378,12 +378,16 @@ $(document).ready(function() {
 				reset();
 			},
 			className : 'color-menu-item',
-			hoverClassName : 'color-menu-item-violet'
+			hoverClassName : 'color-menu-item-violet',
 		}
 	}];
 	$.contextMenu.shadow = false;
 	$(function() {
 		$('.box,.circle').contextMenu(colorMenu);
+		var windowWidth = $(window).width();
+		var leftOffset = -(windowWidth*.24305555555);
+		console.log(leftOffset);
+		$('table').css('margin-left',leftOffset);
 		$('td').prepend('<div class="color-menu-title">colors</div>');
 	});
 
@@ -540,7 +544,7 @@ $(document).ready(function() {
 		handle : '.modal-header',
 		scroll : false
 	});
-	
+
 	//u can animate da page change.
 	$('.animsition').animsition({
 
