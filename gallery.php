@@ -44,7 +44,7 @@ u can view da gallery.
 ?>
 </div>
 </div><!-- End .container-fluid -->
-<script type="text/javascript">
+<script type="text/javascript">		
 	$(document).ready(function() {
 
 		(function($) {
@@ -55,6 +55,20 @@ u can view da gallery.
 			});
 
 		} )(jQuery);
+
+		//dynamically set img height so that all imgs, regardless of upload browser, have the same height
+		function calcHeight(){
+		var imgWidth = $('.gallery-img').css('width');
+		var imgWidthNum = imgWidth.split('p')[0];
+		var imgHeight = imgWidthNum*1.09523809524;
+		console.log('New Height: '+imgHeight);
+		$('.gallery-img').css('height',imgHeight);
+		}
+		calcHeight();
+		$(window).resize(function(){
+			calcHeight();
+		});
+
 
 	}); 
 </script>

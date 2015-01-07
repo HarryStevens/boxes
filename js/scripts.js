@@ -384,11 +384,18 @@ $(document).ready(function() {
 	$.contextMenu.shadow = false;
 	$(function() {
 		$('.box,.circle').contextMenu(colorMenu);
-		var windowWidth = $(window).width();
-		var leftOffset = -(windowWidth*.24305555555);
-		console.log(leftOffset);
-		$('table').css('margin-left',leftOffset);
 		$('td').prepend('<div class="color-menu-title">colors</div>');
+		//u can calculate da context menu location. (there appears to be a bug in contextmenu library that offsets the menu far from the cursor location)
+		function calcOffset() {
+			var windowWidth = $(window).width();
+			var leftOffset = -(windowWidth * .24305555555);
+			$('table').css('margin-left', leftOffset);
+		}
+		calcOffset();
+		$(window).resize(function(){
+			calcOffset();
+		});
+		
 	});
 
 	//u can make da circles.
@@ -521,7 +528,7 @@ $(document).ready(function() {
 						})
 					})
 				},
-				background : '#fff'
+				background : '#fff',
 			});
 		}
 
