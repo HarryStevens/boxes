@@ -81,13 +81,13 @@
 				</div>
 				<br />
 				<br />
-				<div class="button-right active save" data-toggle="modal" data-target="#save">
-					save
-				</div>
-				<br />
-				<br />
 				<div class="button-right inactive upload">
 					submit
+				</div>				
+				<br />
+				<br />
+				<div class="button-right active save" data-toggle="modal" data-target="#save">
+					save
 				</div>
 				<br />
 				<br />
