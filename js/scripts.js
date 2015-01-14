@@ -560,7 +560,6 @@ $(document).ready(function() {
 		inDuration : 400,
 		outDuration : 400,
 		linkElement : '.animsition-link',
-		// e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
 		loading : true,
 		loadingParentElement : 'body', //animsition wrapper element
 		loadingClass : 'animsition-loading',

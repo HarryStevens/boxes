@@ -128,7 +128,7 @@
 							<div class="button active close-modal">
 								home
 							</div>
-							<a href="gallery" class="button-left active animsition-link" style="margin-right:10px;">gallery</a>
+							<a href="gallery" class="button-left-gallery active animsition-link" style="margin-right:10px;">gallery</a>
 
 						</div>
 						<div class="modal-body">
@@ -165,7 +165,7 @@
 										use da controls on da left to play.
 									</li>
 									<li>
-										press da buttons on da right to view da gallery, save da boxes to da hard drive, or submit da boxes to da gallery.
+										press da buttons on da right to view da gallery, submit da boxes to da gallery, or save da boxes to da hard drive.
 									</li>
 								</ol>
 							</div>
@@ -177,7 +177,7 @@
 										da constraints are part of da fun.
 									</li>
 									<li>
-										built wit html, css, php, javascript, <a href="http://jquery.com/" target="_blank">jquery</a>, <a href="http://jqueryui.com/" target="_blank">jquery ui</a>, <a href="http://getbootstrap.com/" target="_blank">bootstrap</a>, <a href="http://ignitersworld.com/lab/contextMenu.html" target="_blank">contextmenu.js</a>, <a href="http://touchpunch.furf.com/" target="_blank">touchpunch</a>, <a href="http://html2canvas.hertzen.com/" target="_blank">html2canvas</a>, <a href="http://git.blivesta.com/animsition/" target="_blank">animsition</a>, <a href="http://www.appelsiini.net/projects/lazyload" target="_blank">Lazy Load</a> and <a href="http://brutaldesign.github.io/swipebox/" target="_blank">swipebox</a>.
+										built wit html, css, php, javascript, <a href="http://jquery.com/" target="_blank">jquery</a>, <a href="http://jqueryui.com/" target="_blank">jquery ui</a>, <a href="http://getbootstrap.com/" target="_blank">bootstrap</a>, <a href="http://ignitersworld.com/lab/contextMenu.html" target="_blank">contextmenu.js</a>, <a href="http://touchpunch.furf.com/" target="_blank">touchpunch</a>, <a href="http://html2canvas.hertzen.com/" target="_blank">html2canvas</a>, <a href="http://git.blivesta.com/animsition/" target="_blank">animsition</a>, <a href="http://www.appelsiini.net/projects/lazyload" target="_blank">lazy load</a> and <a href="http://brutaldesign.github.io/swipebox/" target="_blank">swipebox</a>.
 									</li>
 									<li>
 										<a href="https://github.com/HarryStevens/boxes" target="_blank">view da source</a>.

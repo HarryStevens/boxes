@@ -24,7 +24,7 @@
 </head>
 <body class="animsition">
 <div class="container-fluid">
-<div class="button active animsition-link home" href="/boxes">
+<div class="button-right active animsition-link home" href="/boxes">
 home
 </div>
 <div class="gallery-title">
